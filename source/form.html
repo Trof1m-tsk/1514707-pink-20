@@ -10,7 +10,7 @@
         <img src="https://via.placeholder.com/150x66" alt="Логотип PINK">
       </a>
       <nav class="menu">
-        <button class="menu__toggle" type="button">
+        <button class="menu__toggle" type="menu_button">
           <span class="hidden">Открыть меню</span>
         </button>
         <div class="menu__wrapper">
@@ -31,6 +31,58 @@
       <div class="form-page__banner">
         <h1 class="form-page__banner-text">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
+      <section class="share">
+        <h2 class="share__heading">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+        <div class="share__form_wrapper">
+          <form class="share__form">
+            <div class="share__name_block">
+              <label for="surname-id">Фамилия:</label><br>
+              <input type="text" name="surname" id="surname-id" placeholder="Укажите фамилию *"><br>
+              <label for="name-id">Имя:</label><br>
+              <input type="text" name="name" id="name-id" placeholder="Введите ваше имя *"><br>
+              <label for="patronymic-id">Отчество:</label><br>
+              <input type="text" name="patronymic" id="patronymic-id" placeholder="Ну и отчество тоже">
+            </div>
+            <div class="share__achievements_block">
+              <p class="share__form_heading">Ваши безбашенные достижения в путешествии</p>
+              <input class="checked" type="checkbox" name="shark" id="shark-id" checked>
+              <label for="shark-id">Сделал селфи с акулой</label><br>
+              <input class="checked" type="checkbox" name="beach" id="beach-id" checked>
+              <label for="beach-id">Обгорел на пляже</label><br>
+              <input class="nonchecked" type="checkbox" name="norris" id="norris-id">
+              <label for="norris-id">Видел Чака Норриса</label><br>
+              <input class="nonchecked" type="checkbox" name="souvenirs" id="souvenirs-id">
+              <label for="souvenirs-id">Накупил сувениров</label><br>
+              <input class="checked" type="checkbox" name="tower" id="tower-id" checked>
+              <label for="tower-id">Удержал башню</label><br>
+              <input class="nonchecked" type="checkbox" name="hotel" id="hotel-id">
+              <label for="hotel-id">Разгромил отель</label>
+            </div>
+            <div class="share__contacts_block">
+              <label for="phone-id">Номер телефона</label><br>
+              <input type="text" name="phone" id="phone-id" placeholder="Номер, пожалуйста"><br>
+              <label for="email-id">Адрес почты</label><br>
+              <input type="text" name="email" id="email-id" placeholder="Введите почту *">
+            </div>
+            <div class="share__app_block">
+              <p class="share__form_heading">С каким приложением путешествовали?</p>
+              <label>
+                <input type="radio" name="what-app" value="Pink для iOS" checked>Pink для iOS
+              </label><br>
+              <label><input type="radio" name="what-app" value="Pink на Android">Pink на Android
+              </label><br>
+              <label>
+                <input type="radio" name="what-app" value="Windows Phone">Windows Phone
+              </label>
+            </div>
+            <div class="share__text_block">
+              <p class="share__form_heading">Опишите свои эмоции</p>
+              <textarea name="emotions" rows="5"></textarea>
+            </div>
+              <input class="button" type="submit" value="Отправить форму">
+              <p class="share__reqiured">* — обязательные поля</p>
+        </form>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__logo"></div>

@@ -10,7 +10,7 @@
         <img src="https://via.placeholder.com/150x66" alt="Логотип PINK">
       </a>
       <nav class="menu">
-        <button class="menu__toggle" type="button">
+        <button class="menu__toggle" type="menu_button">
           <span class="hidden">Открыть меню</span>
         </button>
         <div class="menu__wrapper">
@@ -133,6 +133,19 @@
         </div>
       </section>
     </main>
+    <section class="post">
+      <h2 class="photo-page__header">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+      <form class="post__adjust">
+        <img src="https://via.placeholder.com/150x150" alt="Фото"><br>
+        <div class="adjusters">
+          <input type="range" min="0" max="100" step="1" value="50"><br>
+          <input class="hidden" type="range" min="0" max="100" step="1" value="50"><br>
+          <input class="hidden" type="range" min="0" max="100" step="1" value="50"><br>
+        </div>
+        <input class="button" type="submit" value="Запостить">
+        <input class="button" type="submit" value="Отмена" disabled>
+      </form>
+    </section>
     <footer class="footer">
       <div class="footer__logo"></div>
       <div class="footer__socials">
