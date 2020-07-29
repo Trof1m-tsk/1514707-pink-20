@@ -2,11 +2,63 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Пинк: Главная</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="header">
+      <a class="header__logo">
+        <img src="https://via.placeholder.com/150x66" alt="Логотип PINK">
+      </a>
+      <nav class="menu">
+        <button class="menu__toggle" type="button">
+          <span class="hidden">Открыть меню</span>
+        </button>
+        <div class="menu__wrapper">
+          <ul class="menu__list">
+            <li class="menu__item menu__main menu__item--active">
+              <a href="index.html">Главная</a></li>
+            <li class="menu__item menu__photo">
+              <a href="photo.html">Фотографии</a></li>
+            <li class="menu__item menu__contest">
+              <a href="form.html">Конкурс</a></li>
+            <li class="menu__item menu__academy">
+              <a href="https://htmlacademy.ru/">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-page">
+      <div class="main-page__download download">
+        <h1 class="main-page__slogan">Взгляните на жизнь иначе!</h1>
+        <button class="download__button" type="button">Скачать приложение</button>
+        <div class="main-page__OS-icons">
+          <span class="main-page__iOS"></span>
+          <span class="main-page__Android"></span>
+          <span class="main-page__Windows"></span>
+        </div>
+        <p class="available-for">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+      <div class="offer">
+        <p class="offer__text">Устали от серости мегаполиса?</p>
+        <p class="offer__text">Нам есть, что вам<br>предложить!</p>
+      </div>
+      <section class="main-page__advantages">
+        <div class="advantage">
+          <img src="https://via.placeholder.com/150x150" alt="Исходное фото">
+          <h2 class="advantage__header">Поднимает настроение</h2>
+          <p class="advantage__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="advantage">
+          <img src="https://via.placeholder.com/150x150" alt="Обработанное фото">
+          <h2 class="advantage__header">Меняет мир вокруг</h2>
+          <p class="advantage__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="advantage">
+          <img src="https://via.placeholder.com/150x150" alt="Профит">
+          <h2 class="advantage__header">Заводит новых друзей</h2>
+          <p class="advantage__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
