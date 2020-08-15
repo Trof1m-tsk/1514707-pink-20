@@ -25,12 +25,11 @@
 
   &__adjust {
     display: flex;
-  flex-direction: column;
+    flex-direction: column;
   }
 
   &__button {
     display: block;
-    font-family: Open Sans;
     font-weight: 700;
     width: 280px;
     height: 55px;
@@ -51,8 +50,7 @@
   }
 
   &__range {
-  //  display: block;
     width: 240px;
-  margin: 0 40px 34px;
+    margin: 0 40px 34px;
   }
 }

@@ -28,7 +28,7 @@
     left: -20px;
   }
 
-  &__panorama:after {
+  &__panorama::after {
     display: block;
     background-color: #d22856;
     width: 140px;
@@ -42,7 +42,6 @@
   &__content {
     display: flex;
     flex-direction: column;
-    padding-left: 17px;
     background-color: #f2f2f2;
     font-size: 14px;
     color: #283645;

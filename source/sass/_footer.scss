@@ -22,15 +22,15 @@
   }
 
   &__socials {
-  display: flex;
+    display: flex;
   }
 
   &__social_icon {
-  display: block;
-  width: 48px;
-  height: 48px;
-  border: 3px solid #e5e5e5;
-  border-radius: 50%;
+    display: block;
+    width: 48px;
+    height: 48px;
+    border: 3px solid #e5e5e5;
+    border-radius: 50%;
   }
 
   &__social_icon:not(:last-child) {

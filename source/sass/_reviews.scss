@@ -38,8 +38,8 @@
   }
 
   &__slider_marks,
-  &__slider_marks:before,
-  &__slider_marks:after {
+  &__slider_marks::before,
+  &__slider_marks::after {
     width: 6px;
     height: 6px;
     background: #283645;
