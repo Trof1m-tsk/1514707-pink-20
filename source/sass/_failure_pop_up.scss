@@ -1,0 +1,46 @@
+.failure_pop_up {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 320px;
+  height: 289px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 44px 0 55px;
+  z-index: 50;
+  text-align: center;
+
+
+  &__header {
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 37px;
+  }
+
+  &__text {
+    margin: 0 20px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #283645;
+  }
+
+  &__button {
+    display: inline-block;
+    background-color: #2aab6d;
+    border: 2px solid #2aab6d;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    width: 276px;
+    height: 59px;
+    border-radius: 3px;
+    margin: 48px 0 44px;
+  }
+
+  &__button:hover {
+    background-color: #1c9e5b;
+    border: 2px solid #1c9e5b;
+  }
+}

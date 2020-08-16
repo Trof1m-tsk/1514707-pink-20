@@ -1,0 +1,56 @@
+.upload {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+
+  &__header {
+    font-size: 14px;
+    line-height: 30px;
+    color: #283645;
+    text-align: center;
+    margin: 49px auto 52px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 41px;
+    background-color: #f2f2f2;
+  }
+
+  &__image {
+    margin: 0 20px 125px;
+  }
+
+  &__adjust {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__button {
+    display: block;
+    font-weight: 700;
+    width: 280px;
+    height: 55px;
+    margin: 12px 20px 0;
+    box-sizing: border-box;
+    border: 3px solid #d22856;
+    border-radius: (55px) / 2;
+    text-decoration: none;
+    font-size: 18px;
+    color: #d22856;
+    text-align: center;
+  }
+
+  &__button:hover {
+    background-color: #d22856;
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  &__range {
+    width: 240px;
+    margin: 0 40px 34px;
+  }
+}

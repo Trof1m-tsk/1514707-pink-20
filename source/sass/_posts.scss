@@ -1,0 +1,88 @@
+.posts {
+  display: block;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 55px 20px 0;
+  margin: 0;
+
+  & h2 {
+    display: inline-block;
+    text-align: center;
+    color: #283645;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    //margin-bottom: 20px;
+  }
+
+  &__panorama {
+    position: relative;
+    width: 320px;
+    left: -20px;
+  }
+
+  &__panorama::after {
+    display: block;
+    background-color: #d22856;
+    width: 140px;
+    height: 36px;
+  }
+
+  &__photo {
+    margin-top: 20px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    color: #283645;
+    padding: 25px 17px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 14px;
+  }
+
+  &__author {
+    font-weight: 700;
+    margin-right: 3px;
+  }
+
+  &__time {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    line-height: 24px;
+  }
+
+  &__likes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #d22856;
+    margin-top: 23px;
+    text-transform: uppercase;
+  }
+
+  &__like_button {
+    width: 13px;
+    height: 13px;
+    background: url("../img/icon-heart.svg") no-repeat 50% 50%;
+    background-size: 100%;
+    margin-right: 18px;
+  }
+}

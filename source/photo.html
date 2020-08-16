@@ -1,161 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Пинк: Фото</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
+  <body class="photo_page">
     <header class="header">
-      <a class="header__logo">
-        <img src="https://via.placeholder.com/150x66" alt="Логотип PINK">
-      </a>
+      <div class="header__wrapper">
+        <a class="header__logo">
+          <img src="../img/logo-pink-white-mobile.svg" alt="Логотип Pink">
+        </a>
+        <input class="header__toggle" type="checkbox" id="menu_button">
+        <label class="header__toggle_label" for="menu_button">
+          <img src="../img/icon-menu-burger.svg">
+        </label>
+      </div>
       <nav class="menu">
-        <button class="menu__toggle" type="menu_button">
-          <span class="hidden">Открыть меню</span>
-        </button>
-        <div class="menu__wrapper">
-          <ul class="menu__list">
-            <li class="menu__item menu__main">
-              <a href="index.html">Главная</a></li>
-            <li class="menu__item menu__photo menu__item--active">
-              <a href="photo.html">Фотографии</a></li>
-            <li class="menu__item menu__contest">
-              <a href="form.html">Конкурс</a></li>
-            <li class="menu__item menu__academy">
-              <a href="https://htmlacademy.ru/">HTML Academy</a></li>
-          </ul>
-        </div>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
-    <main class="photo-page">
-      <div class="photo-page__banner">
-        <h1 class="photo-page__banner-text"></h1>
+    <main class="photo_main">
+      <div class="photo_main__banner">
+        <h1 class="photo_main__banner_text">Фотографии пользователей</h1>
       </div>
-      <section class="photo-page__posts">
-        <h2 class="photo-page__header">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
-        <div class="photo-page__post post">
-          <img class="post__photo post__panorama" src="https://via.placeholder.com/150x150" alt="Скайпарк">
-          <div class="post__content">
-            <div class="post__info">
-              <p class="post__author">Анна</p>
-              <p class="post__time">(5 минут назад)</p>
+      <section class="posts">
+        <h2 class="posts__header">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+        <img class="posts__panorama" src="../img/panorama-mobile@1x.jpg">
+        <div class="posts__item">
+          <div class="posts__content">
+            <div class="posts__info">
+              <p class="posts__author">Анна</p>
+              <p class="posts__time">(5 минут назад)</p>
             </div>
-            <p class="post_text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <div class="post__likes">
-              <button class="like_button" type="button"></button>
-              <p class="likes_counter">Нравится: <span>215</span></p>
-            </div>
-          </div>
-        </div>
-        <div class="photo-page__post post">
-          <img class="post__photo" src="https://via.placeholder.com/150x150" alt="Белая машина">
-          <div class="post__content">
-            <div class="post__info">
-              <p class="post__author">Левон</p>
-              <p class="post__time">(5 часов назад)</p>
-            </div>
-            <p class="post_text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="post__likes">
-              <button class="like_button" type="button"></button>
-              <p class="likes_counter">Нравится: <span>365</span></p>
+            <p class="posts_text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <div class="posts__likes">
+              <div class="posts__like_button"></div>
+              <p class="posps__likes_counter">Нравится: <span>215</span></p>
             </div>
           </div>
         </div>
-        <div class="photo-page__post post">
-          <img class="post__photo" src="https://via.placeholder.com/150x150" alt="Барабаны">
-          <div class="post__content">
-            <div class="post__info">
-              <p class="post__author">Антон</p>
-              <p class="post__time">(12 часов назад)</p>
+        <div class="posts__item">
+          <img class="posts__photo" src="../img/photo-car-mobile@1x.jpg" alt="Белая машина">
+          <div class="posts__content">
+            <div class="posts__info">
+              <p class="posts__author">Левон</p>
+              <p class="posts__time">(5 часов назад)</p>
             </div>
-            <p class="post_text">Соседи будут рады!</p>
-            <div class="post__likes">
-              <button class="like_button" type="button"></button>
-              <p class="likes_counter">Нравится: <span>666</span></p>
-            </div>
-          </div>
-        </div>
-        <div class="photo-page__post post">
-          <img class="post__photo" src="https://via.placeholder.com/150x150" alt="Небо">
-          <div class="post__content">
-            <div class="post__info">
-              <p class="post__author">Борис</p>
-              <p class="post__time">(20 часов назад)</p>
-            </div>
-            <p class="post_text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <div class="post__likes">
-              <button class="like_button" type="button"></button>
-              <p class="likes_counter">Нравится: <span>215</span></p>
+            <p class="posts_text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <div class="posts__likes">
+              <div class="posts__like_button"></div>
+              <p class="posts__likes_counter">Нравится: <span>365</span></p>
             </div>
           </div>
         </div>
-        <div class="photo-page__post post">
-          <img class="post__photo" src="https://via.placeholder.com/150x150" alt="Кубань">
-          <div class="post__content">
-            <div class="post__info">
-              <p class="post__author">Сергей</p>
-              <p class="post__time">(25 часов назад)</p>
+        <div class="posts__item">
+          <img class="posts__photo" src="../img/photo-drumset-mobile@1x.jpg" alt="Барабаны">
+          <div class="posts__content">
+            <div class="posts__info">
+              <p class="posts__author">Антон</p>
+              <p class="posts__time">(12 часов назад)</p>
             </div>
-            <p class="post_text">Самая кубанская в мире!</p>
-            <div class="post__likes">
-              <button class="like_button" type="button"></button>
-              <p class="likes_counter">Нравится: <span>4</span></p>
-            </div>
-          </div>
-        </div>
-        <div class="photo-page__post post">
-          <img class="post__photo" src="https://via.placeholder.com/150x150" alt="В горах">
-          <div class="post__content">
-            <div class="post__info">
-              <p class="post__author">Максим</p>
-              <p class="post__time">(40 часов назад)</p>
-            </div>
-            <p class="post_text">Где снег-то?</p>
-            <div class="post__likes">
-              <button class="like_button" type="button"></button>
-              <p class="likes_counter">Нравится: <span>150</span></p>
+            <p class="posts_text">Соседи будут рады!</p>
+            <div class="posts__likes">
+              <div class="posts__like_button"></div>
+              <p class="posts__likes_counter">Нравится: <span>666</span></p>
             </div>
           </div>
         </div>
-        <div class="photo-page__post post">
-          <img class="post__photo" src="https://via.placeholder.com/150x150" alt="Крыло самолета">
-          <div class="post__content">
-            <div class="post__info">
-              <p class="post__author">Надежда</p>
-              <p class="post__time">(45 часов назад)</p>
+        <div class="posts__item">
+          <img class="posts__photo" src="../img/photo-window-mobile@1x.jpg" alt="Небо">
+          <div class="posts__content">
+            <div class="posts__info">
+              <p class="posts__author">Борис</p>
+              <p class="posts__time">(20 часов назад)</p>
             </div>
-            <p class="post_text">Всем GM и взаимные лайки!</p>
-            <div class="post__likes">
-              <button class="like_button" type="button"></button>
-              <p class="likes_counter">Нравится: <span>2560</span></p>
+            <p class="posts_text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <div class="posts__likes">
+              <div class="posts__like_button"></div>
+              <p class="posts__likes_counter">Нравится: <span>215</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="posts__item">
+          <img class="posts__photo" src="../img/photo-fair-mobile@1x.jpg" alt="Кубань">
+          <div class="posts__content">
+            <div class="posts__info">
+              <p class="posts__author">Сергей</p>
+              <p class="posts__time">(25 часов назад)</p>
+            </div>
+            <p class="posts_text">Самая кубанская в мире!</p>
+            <div class="posts__likes">
+              <div class="posts__like_button"></div>
+              <p class="posts__likes_counter">Нравится: <span>4</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="posts__item">
+          <img class="posts__photo" src="../img/photo-pov-mobile@1x.jpg" alt="В горах">
+          <div class="posts__content">
+            <div class="posts__info">
+              <p class="posts__author">Максим</p>
+              <p class="posts__time">(40 часов назад)</p>
+            </div>
+            <p class="posts_text">Где снег-то?</p>
+            <div class="posts__likes">
+              <div class="posts__like_button"></div>
+              <p class="posts__likes_counter">Нравится: <span>150</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="posts__item">
+          <img class="posts__photo" src="../img/photo-wing-mobile@1x.jpg" alt="Крыло самолета">
+          <div class="posts__content">
+            <div class="posts__info">
+              <p class="posts__author">Надежда</p>
+              <p class="posts__time">(45 часов назад)</p>
+            </div>
+            <p class="posts_text">Всем GM и взаимные лайки!</p>
+            <div class="posts__likes">
+              <div class="posts__like_button"></div>
+              <p class="posts__likes_counter">Нравится: <span>2560</span></p>
             </div>
           </div>
         </div>
       </section>
-    </main>
-    <section class="post">
-      <h2 class="photo-page__header">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
-      <form class="post__adjust">
-        <img src="https://via.placeholder.com/150x150" alt="Фото"><br>
-        <div class="adjusters">
-          <input type="range" min="0" max="100" step="1" value="50"><br>
-          <input class="hidden" type="range" min="0" max="100" step="1" value="50"><br>
-          <input class="hidden" type="range" min="0" max="100" step="1" value="50"><br>
+      <section class="upload">
+        <h2 class="upload__header">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
+        <div class="upload__wrapper">
+          <img class="upload__image" src="../img/photo-road-mobile@1x.jpg" alt="Фото">
+          <form class="upload__adjust">
+            <div class="upload__adjusters">
+              <input class="upload__range" type="range" min="0" max="100" step="1" value="50">
+              <input class="upload__range hidden" type="range" min="0" max="100" step="1" value="50">
+              <input class="upload__range hidden" type="range" min="0" max="100" step="1" value="50">
+            </div>
+            <input class="upload__button" type="submit" value="Запостить">
+            <input class="upload__button" type="submit" value="Отмена" disabled>
+          </form>
         </div>
-        <input class="button" type="submit" value="Запостить">
-        <input class="button" type="submit" value="Отмена" disabled>
-      </form>
-    </section>
+      </section>
+    </main>
     <footer class="footer">
-      <div class="footer__logo"></div>
-      <div class="footer__socials">
-        <a class="footer__twitter" href="#"></a>
-        <a class="footer__facebook" href="#"></a>
-        <a class="footer__youtube" href="#"></a>
-      </div>
-      <div class="developed_by">
-        <p class="developed_by__text">Разработано</p>
-        <a class="developed_by__logo" href="https://htmlacademy.ru/"></a>
+      <div class="footer__wrapper">
+        <div class="footer__logo"></div>
+        <div class="footer__socials">
+          <a class="footer__twitter footer__social_icon" href="https://twitter.com/"></a>
+          <a class="footer__facebook footer__social_icon" href="https://www.facebook.com/"></a>
+          <a class="footer__youtube footer__social_icon" href="https://www.youtube.com/"></a>
+        </div>
+        <div class="footer__developed_by">
+          <p class="footer__developed_by_text">Разработано</p>
+          <a class="footer__developed_by_logo" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+        </div>
       </div>
     </footer>
   </body>

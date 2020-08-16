@@ -1,0 +1,249 @@
+.share {
+  display: block;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 55px 0 0;
+
+  & h2 {
+    display: inline-block;
+    text-align: center;
+    color: #283645;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0 20px 55px;
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name_block {
+    height: 357px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 20px 86px;
+  }
+
+  &__name_block_label {
+    display: block;
+    align-self: flex-start;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #d22856;
+    margin: 27px 20px 17px;
+  }
+
+  &__name_block_input {
+    min-width: 280px;
+    align-self: flex-end;
+    width: auto;
+    height: 59px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+    color: #283645;
+    font-size: 18px;
+  }
+
+  &__name_block_input:hover {
+    border: 2px solid #d22856;
+  }
+
+  &__achievements_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 518px;
+    padding: 42px 20px;
+    margin-bottom: 88px;
+    background-color: #f2f2f2;
+  }
+
+  &__achievements_header {
+    font-size: 14px;
+    line-height: 18px;
+    color: #d22856;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  &__achievements_label {
+    display: inline-block;
+    text-align: center;
+    color: #d22856;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 0 31px;
+  }
+
+  &__achievements_checkbox_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__checkbox {
+    width: 35px;
+    height: 35px;
+    background-color: #ffffff;
+    margin-right: 20px;
+    border: 2px solid #e5e5e5;
+  }
+
+  &__checkbox_label {
+    font-size: 18px;
+    color: #283645;
+  }
+
+  &__contact_block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 245px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 44px;
+  }
+
+  &__contact_header {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #d22856;
+    margin: 27px 20px 17px;
+  }
+
+  &__contact_label {
+    display: block;
+    align-self: flex-start;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #d22856;
+    margin: 27px 20px 17px;
+  }
+
+  &__contact_input {
+    min-width: 280px;
+    align-self: flex-end;
+    width: auto;
+    height: 59px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+    color: #283645;
+    font-size: 18px;
+  }
+
+  &__contact_input:hover {
+    border: 2px solid #d22856;
+  }
+
+  &__app {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    height: 340px;
+    padding: 42px 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+
+  &__app_header {
+    font-size: 14px;
+    line-height: 18px;
+    color: #d22856;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  &__app_label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #283645;
+  }
+
+  &__app_radio {
+    width: 37px;
+    height: 37px;
+    margin-right: 31px;
+    border: 2px solid #e5e5e5;
+  }
+
+  &__app_radio:hover {
+    border: 2px solid #283645;
+  }
+
+  &__text {
+    height: 273px;
+    padding: 0 20px;
+  }
+
+  &__text_header {
+    font-size: 14px;
+    line-height: 18px;
+    color: #d22856;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 42px auto 20px;
+  }
+
+  &__text_area {
+    height: 190px;
+    width: 100%;
+    border: 2px solid #e5e5e5;
+  }
+
+  &__bottom {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 0 22px;
+  }
+
+  &__bottom_button {
+    display: inline-block;
+    background-color: #2aab6d;
+    border: 2px solid #2aab6d;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    width: 276px;
+    height: 59px;
+    border-radius: 3px;
+    margin: 48px 0 44px;
+  }
+
+  &__bottom_button:hover {
+    background-color: #1c9e5b;
+    border: 2px solid #1c9e5b;
+  }
+
+  &__bottom_reqiured {
+    display: inline-block;
+    font-size: 14px;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+
+    & span {
+      color: #d22856;
+    }
+  }
+}
