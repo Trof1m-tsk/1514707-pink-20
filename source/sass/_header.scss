@@ -1,23 +1,54 @@
 .header {
   display: flex;
+  position: absolute;
   flex-direction: column;
   width: 100%;
+  min-width: 320px;
+  //background-color: #1d2631;
+  background-color: rgba(0, 0, 0, .3);
+  z-index: 20;
+
+  @media (min-width: 661px) {
+    height: 110px;
+  }
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    width: 1200px;
+    //background-color: rgba(0, 0, 0, .3);
+  }
 
   &__wrapper {
     display: flex;
-    position: absolute;
-    height: 65px;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 20;
+    //border-bottom: 1px solid black;
+    padding-left: 20px;
+
+    @media (min-width: 1200px) {
+      padding-left: 130px;
+      border-bottom: none;
+    }
   }
 
   &__logo {
-    display: block;
-    margin-left: 20px;
+    display: flex;
+    width: 200px;
+    height: 65px;
+    background: url("../img/logo-pink-white-mobile.svg") no-repeat 0% 50%;
+
+
+    @media (min-width: 661px) {
+      height: 110px;
+      background: url("../img/logo-pink-white-tablet.svg") no-repeat 0 27px;
+
+    }
+
+    @media (min-width: 1200px) {
+      height: 110px;
+      background: url("../img/logo-pink-white-desktop.svg") no-repeat 0 27px;
+
+    }
   }
 
   &__toggle {
@@ -25,6 +56,62 @@
   }
 
   &__toggle_label {
-    margin-right: 20px;
+    padding-right: 20px;
+
+    @media (min-width: 1200px) {
+      display: none;
+    }
+  }
+
+  & .menu {
+  display: none;
+  width: 100%;
+
+  @media (min-width: 1200px) {
+    display: flex;
+    padding-right: 130px;
+    justify-content: flex-end;
+  }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      width: 100%;
+
+      @media (min-width: 1200px) {
+        flex-direction: row;
+        width: auto;
+        position: absolute;
+      }
+    }
+
+    &__item {
+      display: flex;
+      justify-content: center;
+      background-color: #1d2631;
+      border-bottom: 2px solid black;
+
+      @media (min-width: 1200px) {
+        background: none;
+        border-bottom: none;
+      }
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      height: 65px;
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #ffffff;
+
+      @media (min-width: 1200px) {
+        font-size: 18px;
+        height: 110px;
+        margin-left: 80px;
+      }
+    }
   }
 }

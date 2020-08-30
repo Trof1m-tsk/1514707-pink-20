@@ -1,26 +1,60 @@
 .tariffs {
-  display: block;
-  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
   width: 100%;
-  height: 404px;
-  background-color: #ffffff;
+  height: 506px;
+  background-color: #f2f2f2;
+  padding: 40px 20px;
 
-  &__wrapper {
+  @media (min-width: 661px) {
+    height: 400px;
+  }
+
+  @media (min-width: 980px) {
+    flex-direction: row;
+    padding: 40px auto;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 100px;
+    height: 534px;
+  }
+
+  &__container {
+    display: block;
+    height: auto;
+    left: 500px;
+
+    @media (min-width: 980px) {
+      width: 940px;
+    }
+  }
+
+  &__table {
     display: flex;
     position: relative;
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
     width: 1120px;
-    height: 290px;
-    left: -540px;
+
+    @media (max-width: 660px) {
+      left: -113px;
+    }
+
+    @media (min-width: 661px) {
+      width: 100%;
+
+    }
   }
 
   &__element {
     display: flex;
     border: 2px solid #e5e5e5;
     box-sizing: border-box;
-    width: 280px;
+    width: 24%;
     align-items: center;
   }
 
@@ -49,6 +83,7 @@
     text-transform: uppercase;
     justify-content: flex-start;
     padding-left: 20px;
+
   }
 
   &__yes {
@@ -65,14 +100,30 @@
     visibility: hidden;
   }
 
-  &__slider_marks,
-  &__slider_marks::before,
-  &__slider_marks::after {
+  &__slider_marks {
+    display: flex;
+    width: 62px;
+    height: 12px;
+    margin: 40px auto 0;
+    justify-content: space-between;
+    align-items: center;
+
+
+    @media (min-width: 661px) {
+      display: none;
+    }
+  }
+
+  &__slider_mark {
+    background: #283645;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
     width: 6px;
     height: 6px;
-    background: #283645;
-    border: 3px solid black;
-    border-radius: 50%;
-    margin: 39px auto 43px;
+
+    &--active {
+      background: #ffffff;
+      border: 3px solid black;
+    }
   }
 }

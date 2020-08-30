@@ -1,14 +1,28 @@
 .menu {
   display: none;
   top: 66px;
-  position: relative;
+  position: absolute;
   z-index: 30;
+  width: 100%;
+
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    top: 0;
+  }
 
   &__list {
     display: flex;
     flex-direction: column;
     align-items: center;
     list-style: none;
+
+    @media (min-width: 1200px) {
+      flex-direction: row;
+      justify-content: space-between;
+      position: absolute;
+      width: 620px;
+    }
   }
 
   &__item {
@@ -19,6 +33,15 @@
     border-bottom: 2px solid black;
     padding: 0;
     margin: 0;
+
+    @media (min-width: 661px) {
+      height: 110px;
+      width: auto;
+    }
+
+    @media (min-width: 1200px) {
+      background: none;
+    }
   }
 
   &__link {

@@ -1,5 +1,4 @@
 @import "header.scss";
-@import "menu.scss";
 @import "main.scss";
 @import "intro.scss";
 @import "offer.scss";
@@ -31,12 +30,19 @@
   padding: 0;
 }
 
+html {
+  margin: 0 auto;
+}
+
 body {
   font-family: "Open sans", sans-serif;
   background-color: #e5e5e5;
-  width: 320px;
+  //width: 100%;
+  //min-width: 320px;
+  max-width: 1200px;
+  height: 100%;
+  //position: absolute;
   margin: 0 auto;
-  position: relative;
 }
 
 .hidden {
