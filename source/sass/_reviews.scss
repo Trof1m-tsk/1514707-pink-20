@@ -39,7 +39,7 @@
 
   &__arrow_right {
     background: #efefef url('img/icon-review-arrow-right.svg') no-repeat 50% 50%;
-    
+
     @media (min-width: 980px) {
       display: block;
     }
@@ -85,7 +85,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-
     justify-content: flex-start;
     align-items: center;
     padding: 0 20px;

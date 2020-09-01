@@ -17,10 +17,6 @@
     padding: 70px 0;
   }
 
-  &::after {
-    background: url("../img/bg-triangle-white.svg") no-repeat 0 0;
-  }
-
   &__text {
     display: block;
     width: 220px;
@@ -35,20 +31,11 @@
     }
   }
 
-  &__text:first-child {
-    margin-bottom: 40px;
-
-    @media (min-width: 661px) {
-      margin-bottom: 0;
-    }
-  }
-
   &__space {
     display: inline;
 
     @media (max-width: 661px) {
       display: none;
     }
-    
   }
 }

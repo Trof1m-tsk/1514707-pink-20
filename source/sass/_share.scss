@@ -2,7 +2,7 @@
   display: block;
   box-sizing: border-box;
   background-color: #ffffff;
-  padding: 55px 0 0;
+  padding-top: 55px;
 
   @media (min-width: 661px) {
     padding-top: 100px;
@@ -52,7 +52,7 @@
     margin: 0 20px 44px;
 
     @media (min-width: 661px) {
-      order: -10;   
+      order: -10;
       height: 300px;
     }
 
@@ -69,10 +69,6 @@
     @media (max-width: 660px) {
       flex-direction: column;
     }
-
-   /* @media (min-width: 661px) {
-      margin-bottom: 56px;
-    }*/
   }
 
   &__name_label {
@@ -367,7 +363,7 @@
     text-align: center;
     margin: 42px auto 20px;
 
-   @media (min-width: 661px) {
+    @media (min-width: 661px) {
       position: absolute;
       align-self: center;
       top: -10px;
