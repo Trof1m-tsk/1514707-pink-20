@@ -30,7 +30,7 @@
   }
 
   &__arrow_left {
-    background: #efefef url('img/icon-review-arrow-left.svg') no-repeat 50% 50%;
+    background: #efefef url('../img/icon-review-arrow-left.svg') no-repeat 50% 50%;
     
     @media (min-width: 980px) {
       display: block;
@@ -38,7 +38,7 @@
   }
 
   &__arrow_right {
-    background: #efefef url('img/icon-review-arrow-right.svg') no-repeat 50% 50%;
+    background: #efefef url('../img/icon-review-arrow-right.svg') no-repeat 50% 50%;
 
     @media (min-width: 980px) {
       display: block;
@@ -67,7 +67,7 @@
       align-self: center;
       width: 80px;
       height: 65px;
-      background: #efefef url('img/icon-quotes.svg') no-repeat 50% 50%;
+      background: #efefef url('../img/icon-quotes.svg') no-repeat 50% 50%;
     }
   }
 

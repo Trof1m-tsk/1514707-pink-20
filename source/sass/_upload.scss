@@ -125,7 +125,7 @@
   &__crop_icon {
     height: 30px;
     width: 30px;
-    background: url("img/icon-editor-crop.svg") no-repeat 50% 50%;
+    background: url("../img/icon-editor-crop.svg") no-repeat 50% 50%;
 
     @media (max-width: 660px) {
       display: none;
@@ -135,7 +135,7 @@
   &__fill_icon {
     height: 30px;
     width: 30px;
-    background: url("img/icon-editor-fill.svg") no-repeat 50% 50%;
+    background: url("../img/icon-editor-fill.svg") no-repeat 50% 50%;
 
     @media (max-width: 660px) {
       display: none;
@@ -145,7 +145,7 @@
   &__contrast_icon {
     height: 30px;
     width: 30px;
-    background: url("img/icon-editor-contrast.svg") no-repeat 50% 50%;
+    background: url("../img/icon-editor-contrast.svg") no-repeat 50% 50%;
 
     @media (max-width: 660px) {
       display: none;

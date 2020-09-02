@@ -1,8 +1,11 @@
 .menu {
-  display: none;
   width: 100%;
 
-  @media (min-width: 1200px) {
+  &--closed {
+    display: none;
+  }
+
+  @media (min-width: 980px) {
     display: flex;
     padding-right: 130px;
     justify-content: flex-end;
@@ -24,18 +27,21 @@
   &__item {
     display: flex;
     justify-content: center;
-    background-color: #1d2631;
-    border-bottom: 2px solid black;
+    align-items: center;
+    
 
-    @media (min-width: 1200px) {
-      background: none;
-      border-bottom: none;
+    @media (max-width: 979px) {
+      background-color: #283645;
+      border-bottom: 1px solid black;
+      border-top: 1px solid dimgrey;
     }
   }
 
   &__link {
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
     text-decoration: none;
     height: 65px;
     font-size: 16px;
