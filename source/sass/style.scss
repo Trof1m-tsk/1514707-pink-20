@@ -1,6 +1,5 @@
 @import "header.scss";
 @import "main.scss";
-@import "menu.scss";
 @import "intro.scss";
 @import "offer.scss";
 @import "advantages.scss";
@@ -31,9 +30,6 @@
   padding: 0;
 }
 
-html {
-  margin: 0 auto;
-}
 
 body {
   font-family: "Open sans", sans-serif;

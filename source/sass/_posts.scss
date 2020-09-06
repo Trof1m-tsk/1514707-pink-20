@@ -2,137 +2,137 @@
   width: 100%;
   background-color: #ffffff;
   padding-top: 55px;
+}
 
-  &__heading {
-    display: block;
-    text-align: center;
-    color: #283645;
-    font-size: 14px;
-    line-height: 30px;
-    margin: 0 20px 55px;
+.posts__heading {
+  display: block;
+  text-align: center;
+  color: #283645;
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0 20px 55px;
 
-    @media (min-width: 661px) {
-      font-size: 18px;
-      margin: 0 auto 80px;
-      width: 480px;
-    }
-
-    @media (min-width: 980px) {
-      width: 600px;
-    }
+  @media (min-width: 661px) {
+    font-size: 18px;
+    margin: 0 auto 80px;
+    width: 480px;
   }
 
-  &__panorama {
-    width: 100%;
+  @media (min-width: 980px) {
+    width: 600px;
   }
+}
 
-  &__panorama_content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 14px;
-    color: #283645;
-    margin: 0 20px;
-    padding: 25px 20px;
-    background-color: #f2f2f2;
+.posts__panorama {
+  width: 100%;
+}
 
-    @media (min-width: 980px) {
-      width: 900px;
-      margin: 0 auto;
-    }
+.posts__panorama_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #283645;
+  margin: 0 20px;
+  padding: 25px 20px;
+  background-color: #f2f2f2;
+
+  @media (min-width: 980px) {
+    width: 900px;
+    margin: 0 auto;
   }
+}
 
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 20px;
+.posts__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
 
-    @media (min-width: 661px) {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: stretch;
-    }
-
-    @media (min-width: 980px) {
-      width: 940px;
-      margin: 0 auto;
-      justify-content: space-between;
-    }
-  }
-
-  &__item {
-    display: flex;
-    flex-direction: column;
-    width: 280px;
-    justify-content: flex-start;
-    background-color: #f2f2f2;
-    margin-top: 20px;
-
-    @media (min-width: 661px) {
-      width: 300px;
-    }
-  }
-
-  &__photo {
-    display: block;
-    width: 100%;
-  }
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-size: 14px;
-    color: #283645;
-    padding: 25px 17px;
-  }
-
-  &__info {
-    display: flex;
+  @media (min-width: 661px) {
     flex-direction: row;
-    align-items: flex-end;
-    margin-bottom: 14px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
   }
 
-  &__author {
-    font-weight: 700;
-    margin-right: 3px;
+  @media (min-width: 980px) {
+    width: 940px;
+    margin: 0 auto;
+    justify-content: space-between;
   }
+}
 
-  &__time {
-    font-size: 12px;
-    text-transform: uppercase;
+.posts__item {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  justify-content: flex-start;
+  background-color: #f2f2f2;
+  margin-top: 20px;
+
+  @media (min-width: 661px) {
+    width: 300px;
   }
+}
 
-  &__text {
-    line-height: 24px;
-    flex-grow: 1;
+.posts__photo {
+  display: block;
+  width: 100%;
+}
+
+.posts__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 14px;
+  color: #283645;
+  padding: 25px 17px;
+}
+
+.posts__info {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 14px;
+}
+
+.posts__author {
+  font-weight: 700;
+  margin-right: 3px;
+}
+
+.posts__time {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.posts__text {
+  line-height: 24px;
+  flex-grow: 1;
+}
+
+.posts__likes {
+  display: flex;
+  align-items: center;
+  color: #d22856;
+  margin-top: 23px;
+  text-transform: uppercase;
+
+  @media (min-width: 661px) {
+    justify-content: space-between;
   }
+}
 
-  &__likes {
-    display: flex;
-    align-items: center;
-    color: #d22856;
-    margin-top: 23px;
-    text-transform: uppercase;
+.posts__like_button {
+  width: 13px;
+  height: 13px;
+  background: url("../img/icon-heart.svg") no-repeat 50% 50%;
+  background-size: 100%;
+  margin-right: 18px;
 
-    @media (min-width: 661px) {
-      justify-content: space-between;
-    }
-  }
-
-  &__like_button {
-    width: 13px;
-    height: 13px;
-    background: url("../img/icon-heart.svg") no-repeat 50% 50%;
-    background-size: 100%;
-    margin-right: 18px;
-
-    @media (min-width: 661px) {
-      order: 1;
-    }
+  @media (min-width: 661px) {
+    order: 1;
   }
 }

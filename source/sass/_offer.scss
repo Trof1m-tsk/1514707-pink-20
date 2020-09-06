@@ -16,26 +16,26 @@
   @media (min-width: 980px) {
     padding: 70px 0;
   }
+}
 
-  &__text {
-    display: block;
-    width: 220px;
-    font-size: 24px;
-    line-height: 120%;
-    color: #283645;
-    text-align: center;
+.offer__text {
+  display: block;
+  width: 220px;
+  font-size: 24px;
+  line-height: 120%;
+  color: #283645;
+  text-align: center;
 
-    @media (min-width: 661px) {
-      font-size: 40px;
-      width: auto;
-    }
+  @media (min-width: 661px) {
+    font-size: 40px;
+    width: auto;
   }
+}
 
-  &__space {
-    display: inline;
+.offer__space {
+  display: inline;
 
-    @media (max-width: 661px) {
-      display: none;
-    }
+  @media (max-width: 661px) {
+    display: none;
   }
 }
