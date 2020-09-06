@@ -1,0 +1,128 @@
+.tariffs {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  height: 506px;
+  background-color: #f2f2f2;
+  padding: 40px 20px;
+
+  @media (min-width: 661px) {
+    height: 400px;
+  }
+
+  @media (min-width: 980px) {
+    flex-direction: row;
+    padding: 40px auto;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 100px;
+    height: 534px;
+  }
+}
+
+.tariffs__container {
+  display: block;
+  height: auto;
+  left: 500px;
+
+  @media (min-width: 980px) {
+    width: 940px;
+  }
+}
+
+.tariffs__table {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 1120px;
+
+  @media (max-width: 660px) {
+    left: -113px;
+  }
+
+  @media (min-width: 661px) {
+    width: 100%;
+  }
+}
+
+.tariffs__element {
+  display: flex;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+  width: 24%;
+  align-items: center;
+}
+
+.tariffs__heading {
+  height: 94px;
+  background-color: #283645;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #ffffff;
+  font-size: 18px;
+
+  span {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+  
+
+.tariffs__cell {
+  height: 63px;
+  background-color: #ffffff;
+  margin-top: -9px;
+}
+
+.tariffs__first_col {
+  text-transform: uppercase;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.tariffs__yes {
+  background: #ffffff url("../img/icon-yes.svg") no-repeat 50% 50%;
+  background-size: 31px 21px;
+}
+
+.tariffs__no {
+  background: #ffffff url("../img/icon-no.svg") no-repeat 50% 50%;
+  background-size: 31px 21px;
+}
+
+.tariffs__empty {
+  visibility: hidden;
+}
+
+.tariffs__slider_marks {
+  display: flex;
+  width: 62px;
+  height: 12px;
+  margin: 40px auto 0;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: 661px) {
+    display: none;
+  }
+}
+
+.tariffs__slider_mark {
+  background: #283645;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+
+  &--active {
+    background: #ffffff;
+    border: 3px solid black;
+  }
+}

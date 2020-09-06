@@ -8,26 +8,25 @@
   </head>
   <body class="form_page">
     <header class="header">
-      <div class="header__wrapper">
-        <a class="header__logo"></a>
-        <label class="header__toggle_label" for="menu_button">
-          <input class="header__toggle" type="checkbox" id="menu_button">
-          <img src="img/icon-menu-burger.svg">
-        </label>
-      </div>
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link" href="index.html">Главная</a>
+      <nav class="header__nav">
+        <div class="header__wrapper">
+          <a class="header__logo" href="index.html"></a>
+          <button class="header__toggle" id="menu_button">
+            <img src="img/icon-menu-burger.svg">
+          </button>
+        </div>
+        <ul class="header__menu header__menu--closed">
+          <li class="header__item">
+            <a class="header__link" href="index.html">Главная</a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="photo.html">Фотографии</a>
+          <li class="header__item">
+            <a class="header__link" href="photo.html">Фотографии</a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="form.html">Конкурс</a>
+          <li class="header__item">
+            <a class="header__link" href="form.html">Конкурс</a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          <li class="header__item">
+            <a class="header__link" href="https://htmlacademy.ru/">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -82,15 +81,17 @@
           </div>
           <div class="share__contact">
             <p class="share__contact_header">Контактная информация</p>
-            <div class="share__contact_container">
-              <label class="share__contact_label" for="phone-id">Номер телефона</label>
-              <input class="share__contact_input" type="text" name="phone" id="phone-id" placeholder="Номер, пожалуйста">
-              <div class="share__contact_phone_icon"></div>
-            </div>
-            <div class="share__contact_container">
-              <label class="share__contact_label" for="email-id">Адрес почты</label>
-              <input class="share__contact_input" type="text" name="email" id="email-id" placeholder="Введите почту *">
-              <div class="share__contact_email_icon"></div>
+            <div class="share__wrapper">
+              <div class="share__contact_container">
+                <label class="share__contact_label" for="phone-id">Номер телефона</label>
+                <input class="share__contact_input" type="text" name="phone" id="phone-id" placeholder="Номер, пожалуйста">
+                <div class="share__contact_phone_icon"></div>
+              </div>
+              <div class="share__contact_container">
+                <label class="share__contact_label" for="email-id">Адрес почты</label>
+                <input class="share__contact_input" type="text" name="email" id="email-id" placeholder="Введите почту *">
+                <div class="share__contact_email_icon"></div>
+              </div>
             </div>
           </div>
           <div class="share__app">
@@ -142,5 +143,6 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
