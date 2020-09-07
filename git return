@@ -1,0 +1,30 @@
+[33mcommit 4beee33469ab38a39838a672721032ea432e1d42[m[33m ([m[1;36mHEAD -> [m[1;32mmodule2-task1[m[33m)[m
+Author: Trofim-tsk <m.trofimov1987@gmail.com>
+Date:   Tue Jul 28 18:49:25 2020 +0700
+
+    Начата разметка страниц
+
+[33mcommit 03a210e6850f87f2d762ce371d3593f2ceb9cfeb[m
+Author: Trofim-tsk <m.trofimov1987@gmail.com>
+Date:   Tue Jul 28 18:47:18 2020 +0700
+
+    Начата разметка главной страницы
+
+[33mcommit 6af0d15aacba717be87ef1846b1a8dfb36445037[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;31macademy/master[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: 3366b6a ce0c5e3
+Author: Keks <keksobot@users.noreply.github.com>
+Date:   Sat Jul 18 17:44:03 2020 +0300
+
+    Merge pull request #1 from Trof1m-tsk/module1-task1
+
+[33mcommit ce0c5e38e24cf8cbaad11e59568967d37848857e[m[33m ([m[1;31morigin/module1-task1[m[33m, [m[1;32mmodule1-task1[m[33m)[m
+Author: Trofim-tsk <m.trofimov1987@gmail.com>
+Date:   Sat Jul 18 03:41:26 2020 +0700
+
+    Указано имя наставника
+
+[33mcommit 3366b6ae0c6dd1307624967ec9b82878e24d24d5[m
+Author: Keks <keks@htmlacademy.ru>
+Date:   Tue Jul 14 22:50:23 2020 +0300
+
+    :hatching_chick:
