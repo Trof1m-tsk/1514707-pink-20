@@ -1,0 +1,44 @@
+.download {
+  display: flex;
+  position: absolute;
+  top: 462px;
+  width: 100%;
+  height: 733px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.download__button {
+  position: absolute;
+  display: block;
+  width: 280px;
+  height: 49px;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 27.5px;
+  margin: 28px 20px 0;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.download__available_for {
+  position: relative;
+  margin: 0 20px 0;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.download__icons {
+  position: relative;
+  display: inline-block;
+  margin: 32px 0 10px;
+  vertical-align: middle;
+}
+
+.download__icon {
+  display: inline-block;
+  margin: 0px 17px;
+  width: 47px;
+  height: 56px;
+}
