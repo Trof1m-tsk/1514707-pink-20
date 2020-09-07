@@ -11,8 +11,9 @@
       <nav class="header__nav">
         <div class="header__wrapper">
           <a class="header__logo" href="index.html"></a>
-          <button class="header__toggle" id="menu_button">
-            <img src="img/icon-menu-burger.svg">
+          <button class="header__toggle header__toggle--closed_menu" id="menu_button">
+            <img src="img/icon-menu-cross.svg" class="header__cross hidden">
+            <img src="img/icon-menu-burger.svg" class="header__burger">
           </button>
         </div>
         <ul class="header__menu header__menu--closed">
@@ -38,9 +39,9 @@
       <section class="posts">
         <h2 class="posts__heading">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
         <picture>
-          <source srcset="../img/panorama-desktop@1x.jpg" media="(min-width: 980px)">
-          <source srcset="../img/panorama-tablet@1x.jpg" media="(min-width: 661px)">
-          <img class="posts__panorama" src="../img/panorama-mobile@1x.jpg" alt="Панорама">
+          <source srcset="img/panorama-desktop@1x.jpg" media="(min-width: 980px)">
+          <source srcset="img/panorama-tablet@1x.jpg" media="(min-width: 661px)">
+          <img class="posts__panorama" src="img/panorama-mobile@1x.jpg" alt="Панорама">
         </picture>
         <div class="posts__panorama_content">
           <div class="posts__info">
@@ -56,9 +57,9 @@
         <div class="posts__wrapper">
           <div class="posts__item">
             <picture class="posts__photo">
-              <source srcset="../img/photo-car-desktop@1x.jpg" media="(min-width: 980px)">
-              <source srcset="../img/photo-car-tablet@1x.jpg" media="(min-width: 661px)">
-              <img src="../img/photo-car-mobile@1x.jpg" alt="Белая машина">
+              <source srcset="img/photo-car-desktop@1x.jpg" media="(min-width: 980px)">
+              <source srcset="img/photo-car-tablet@1x.jpg" media="(min-width: 661px)">
+              <img src="img/photo-car-mobile@1x.jpg" alt="Белая машина">
             </picture>
             <div class="posts__content">
               <div class="posts__info">
@@ -74,9 +75,9 @@
           </div>
           <div class="posts__item">
             <picture class="posts__photo">
-              <source srcset="../img/photo-drumset-desktop@1x.jpg" media="(min-width: 980px)">
-              <source srcset="../img/photo-drumset-tablet@1x.jpg" media="(min-width: 661px)">
-              <img src="../img/photo-drumset-mobile@1x.jpg" alt="Барабаны">
+              <source srcset="img/photo-drumset-desktop@1x.jpg" media="(min-width: 980px)">
+              <source srcset="img/photo-drumset-tablet@1x.jpg" media="(min-width: 661px)">
+              <img src="img/photo-drumset-mobile@1x.jpg" alt="Барабаны">
             </picture>
             <div class="posts__content">
               <div class="posts__info">
@@ -92,9 +93,9 @@
           </div>
           <div class="posts__item">
             <picture class="posts__photo">
-              <source srcset="../img/photo-window-desktop@1x.jpg" media="(min-width: 980px)">
-              <source srcset="../img/photo-window-tablet@1x.jpg" media="(min-width: 661px)">
-              <img src="../img/photo-window-mobile@1x.jpg" alt="Небо">
+              <source srcset="img/photo-window-desktop@1x.jpg" media="(min-width: 980px)">
+              <source srcset="img/photo-window-tablet@1x.jpg" media="(min-width: 661px)">
+              <img src="img/photo-window-mobile@1x.jpg" alt="Небо">
             </picture>
             <div class="posts__content">
               <div class="posts__info">
@@ -110,9 +111,9 @@
           </div>
           <div class="posts__item">
             <picture class="posts__photo">
-              <source srcset="../img/photo-fair-desktop@1x.jpg" media="(min-width: 980px)">
-              <source srcset="../img/photo-fair-tablet@1x.jpg" media="(min-width: 661px)">
-              <img src="../img/photo-fair-mobile@1x.jpg" alt="Кубань">
+              <source srcset="img/photo-fair-desktop@1x.jpg" media="(min-width: 980px)">
+              <source srcset="img/photo-fair-tablet@1x.jpg" media="(min-width: 661px)">
+              <img src="img/photo-fair-mobile@1x.jpg" alt="Кубань">
             </picture>
             <div class="posts__content">
               <div class="posts__info">
@@ -128,9 +129,9 @@
           </div>
           <div class="posts__item">
             <picture class="posts__photo">
-              <source srcset="../img/photo-pov-desktop@1x.jpg" media="(min-width: 980px)">
-              <source srcset="../img/photo-pov-tablet@1x.jpg" media="(min-width: 661px)">
-              <img src="../img/photo-pov-mobile@1x.jpg" alt="В горах">
+              <source srcset="img/photo-pov-desktop@1x.jpg" media="(min-width: 980px)">
+              <source srcset="img/photo-pov-tablet@1x.jpg" media="(min-width: 661px)">
+              <img src="img/photo-pov-mobile@1x.jpg" alt="В горах">
             </picture>
             <div class="posts__content">
               <div class="posts__info">
@@ -146,9 +147,9 @@
           </div>
           <div class="posts__item">
             <picture class="posts__photo">
-              <source srcset="../img/photo-wing-desktop@1x.jpg" media="(min-width: 980px)">
-              <source srcset="../img/photo-wing-tablet@1x.jpg" media="(min-width: 661px)">
-              <img src="../img/photo-wing-mobile@1x.jpg" alt="Крыло самолета">
+              <source srcset="img/photo-wing-desktop@1x.jpg" media="(min-width: 980px)">
+              <source srcset="img/photo-wing-tablet@1x.jpg" media="(min-width: 661px)">
+              <img src="img/photo-wing-mobile@1x.jpg" alt="Крыло самолета">
             </picture>
             <div class="posts__content">
               <div class="posts__info">
@@ -167,12 +168,11 @@
       <section class="upload">
         <h2 class="upload__header">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
         <div class="upload__wrapper">
-          <img class="upload__image" src="../img/photo-road-mobile@1x.jpg" alt="Фото">
+          <img class="upload__image" src="img/photo-road-mobile@1x.jpg" alt="Фото">
           <div class="upload__mobile_icons">
-            <img src="../img/icon-editor-crop.svg">
-            <img src="../img/icon-editor-fill.svg">
-            <img src="../img/icon-editor-contrast.svg">
-
+            <img src="img/icon-editor-crop.svg">
+            <img src="img/icon-editor-fill.svg">
+            <img src="img/icon-editor-contrast.svg">
           </div>
           <form class="upload__adjust">
             <div class="upload__adjusters">
