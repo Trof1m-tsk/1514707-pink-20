@@ -1,0 +1,46 @@
+.form_text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 273px;
+  padding: 0 20px;
+
+  @media (min-width: 661px) {
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+    margin: 50px 20px 20px;
+    padding: 50px 60px;
+  }
+
+  @media (min-width: 980px) {
+    width: 940px;
+  }
+}
+
+.form_text__header {
+  font-size: 14px;
+  line-height: 18px;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 42px auto 20px;
+
+  @media (min-width: 661px) {
+    position: absolute;
+    align-self: center;
+    top: -10px;
+    padding: 0 30px;
+    margin: 0;
+    background-color: #ffffff;
+  }
+}
+
+.form_text__area {
+  font-size: 18px;
+  line-height: 30px;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  border: 2px solid #e5e5e5;
+}
