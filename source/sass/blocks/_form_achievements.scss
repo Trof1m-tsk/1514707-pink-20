@@ -41,14 +41,6 @@
   }
 }
 
-.form_achievements__label {
-  display: inline-block;
-  text-align: center;
-  color: #d22856;
-  font-size: 14px;
-  line-height: 18px;
-}
-
 .form_achievements__checkbox_wrapper {
   display: flex;
   flex-direction: row;
@@ -70,6 +62,9 @@
 }
 
 .form_achievements__label {
+  display: inline-block;
+  text-align: center;
   font-size: 18px;
   color: #283645;
+  line-height: 18px;
 }
