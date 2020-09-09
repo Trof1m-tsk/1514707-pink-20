@@ -33,14 +33,12 @@
 .tariffs__container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   width: 1200px;
   justify-content: center;
 }
 
 .tariffs__table {
   display: grid;
-  margin-left: -50%;
   margin: 0 auto;
   grid-template-columns: 276px 276px 276px;
   grid-template-rows: 94px 59px 59px 59px;
@@ -107,7 +105,7 @@
   color: #ffffff;
   font-size: 14px;
 
-  &:before {
+  &::before {
     position: absolute;
     content: "хит";
     left: 15px;
