@@ -7,7 +7,7 @@
   flex-direction: column;
   height: 245px;
 
-  @media (min-width: 661px) {
+  @media (min-width: $t_min) {
     margin: 50px 20px 20px;
     border: 2px solid #e5e5e5;
     border-radius: 3px;
@@ -15,9 +15,9 @@
     order: -8;
   }
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     height: auto;
-    width: 940px;
+    width: 920px;
     justify-content: space-between;
     box-sizing: border-box;
     align-self: center;
@@ -34,7 +34,7 @@
   padding: 0 30px;
   background-color: #ffffff;
 
-  @media (max-width: 659px) {
+  @media (max-width: $m_max) {
     display: none;
   }
 }
@@ -44,7 +44,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     flex-direction: row;
   }
 }
@@ -53,7 +53,7 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     width: 375px;
   }
 }
@@ -66,7 +66,7 @@
   color: #d22856;
   margin: 21px 20px;
 
-  @media (min-width: 661px) {
+  @media (min-width: $t_min) {
     order: 1;
   }
 }
@@ -80,7 +80,7 @@
   color: #283645;
   font-size: 18px;
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     width: 350px;
   }
 
@@ -90,9 +90,9 @@
 }
 
 .form_contact__phone_icon {
-  background: #e5e5e5 url("../img/icon-phone.svg") no-repeat 0 0;
-  width: 55px;
-  height: 55px;
+  background: #e5e5e5 url("../img/icon-phone.svg") no-repeat 50% 50%;
+  width: 59px;
+  height: 59px;
   position: absolute;
   align-self: flex-end;
 
@@ -102,7 +102,7 @@
 }
 
 .form_contact__email_icon {
-  background: #e5e5e5 url("../img/icon-mail.svg") no-repeat 0 0;
+  background: #e5e5e5 url("../img/icon-mail.svg") no-repeat 50% 50%;
   width: 59px;
   height: 59px;
   position: absolute;

@@ -10,7 +10,13 @@
     <header class="header">
       <nav class="header__nav">
         <div class="header__wrapper">
-          <a class="header__logo" href="index.html"></a>
+          <a class="header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 980px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg" width="auto" height="auto" alt="Логотип">
+            </picture>
+          </a>
           <button class="header__toggle header__toggle--closed_menu" id="menu_button">
             <img src="img/icon-menu-burger.svg" class="header__burger">
             <img src="img/icon-menu-cross.svg" class="header__cross hidden">
@@ -38,10 +44,10 @@
       </div>
       <section class="posts">
         <h2 class="posts__heading">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
-        <picture>
-          <source srcset="img/panorama-desktop@1x.jpg" media="(min-width: 980px)">
-          <source srcset="img/panorama-tablet@1x.jpg" media="(min-width: 661px)">
-          <img class="panorama" src="img/panorama-mobile@1x.jpg" alt="Панорама">
+        <picture class="panorama">
+          <source srcset="img/panorama-desktop@1x.jpg" media="(min-width: 960px)">
+          <source srcset="img/panorama-tablet@1x.jpg" media="(min-width: 660px)">
+          <img class="panorama__image" src="img/panorama-mobile@1x.jpg" alt="Панорама">
         </picture>
         <div class="panorama__content">
           <div class="post__info">
@@ -177,15 +183,15 @@
           <form class="upload__adjust">
             <div class="upload__adjusters">
               <div class="upload__crop">
-                <div class="upload__crop_icon"></div>
+                <div class="upload__crop_icon upload__icons"></div>
                 <input class="upload__range" type="range" min="0" max="100" step="1" value="50">
               </div>
               <div class="upload__fill">
-                <div class="upload__fill_icon"></div>
+                <div class="upload__fill_icon upload__icons"></div>
                 <input class="upload__range" type="range" min="0" max="100" step="1" value="50">
               </div>
               <div class="upload__contrast">
-                <div class="upload__contrast_icon"></div>
+                <div class="upload__contrast_icon upload__icons"></div>
                 <input class="upload__range" type="range" min="0" max="100" step="1" value="50">
               </div>
             </div>
@@ -199,15 +205,25 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <div class="footer__logo"></div>
+        <a class="footer__logo" href="index.html">
+          <img src="img/logo-pink-blue-mobile.svg" alt="Логотип">
+        </a>
         <div class="footer__socials">
-          <a class="footer__twitter footer__social_icon" href="https://twitter.com/"></a>
-          <a class="footer__facebook footer__social_icon" href="https://www.facebook.com/"></a>
-          <a class="footer__youtube footer__social_icon" href="https://www.youtube.com/"></a>
+          <a class="footer__social_icon" href="https://twitter.com/">
+            <img class="footer__twitter" src="img/icon-twitter.svg" alt="twitter">
+          </a>
+          <a class="footer__social_icon" href="https://www.facebook.com/">
+            <img class="footer__facebook" src="img/icon-facebook.svg" alt="facebook">
+          </a>
+          <a class="footer__social_icon" href="https://www.youtube.com/">
+            <img class="footer__youtubeS" src="img/icon-youtube.svg" alt="youtube">
+          </a>
         </div>
         <div class="footer__developed_by">
           <p class="footer__developed_by_text">Разработано</p>
-          <a class="footer__developed_by_logo" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+          <a class="footer__developed_by_logo" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/htmlacademy.svg" alt="htmlacademy">
+          </a>
         </div>
       </div>
     </footer>

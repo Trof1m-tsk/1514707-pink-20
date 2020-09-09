@@ -1,4 +1,5 @@
 .tariffs {
+  position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -9,11 +10,12 @@
   background-color: #f2f2f2;
   padding: 40px 20px;
 
-  @media (min-width: 661px) {
+  @media (min-width: $t_min) {
     height: 400px;
+    padding-bottom: 70px;
   }
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     flex-direction: row;
     padding: 40px auto;
     justify-content: center;
@@ -23,76 +25,167 @@
   }
 }
 
-.tariffs__container {
-  display: block;
-  height: auto;
-  left: 500px;
+.tariffs__background {
+  position: absolute;
+  top: 0;
+}
 
-  @media (min-width: 980px) {
-    width: 940px;
-  }
+.tariffs__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 1200px;
+  justify-content: center;
 }
 
 .tariffs__table {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  width: 1120px;
+  display: grid;
+  margin-left: -50%;
+  margin: 0 auto;
+  grid-template-columns: 276px 276px 276px;
+  grid-template-rows: 94px 59px 59px 59px;
+  gap: 2px;
 
-  @media (max-width: 660px) {
-    left: -113px;
+  @media (min-width: $t_min) {
+    grid-template-columns: 153px 153px 153px 153px;
+    grid-template-rows: 75px 45px 45px 45px;
   }
 
-  @media (min-width: 661px) {
-    width: 100%;
+  @media (min-width: $d_min) {
+    grid-template-columns: 233px 233px 233px 233px;
+    grid-template-rows: 94px 59px 59px 59px;
   }
-}
-
-.tariffs__element {
-  display: flex;
-  border: 2px solid #e5e5e5;
-  box-sizing: border-box;
-  width: 24%;
-  align-items: center;
 }
 
 .tariffs__heading {
-  height: 94px;
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
   background-color: #283645;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  padding-top: 15px;
   color: #ffffff;
   font-size: 18px;
 
-  span {
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
+  @media (min-width: $t_min) {
+    justify-content: center;
+    padding-top: 0;
+  }
+}
+
+.tariffs__title {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  z-index: 2;
+
+  @media (min-width: $d_min) {
+    font-size: 18px;
+  }
+}
+
+.tariffs__price {
+  font-size: 18px;
+  font-weight: 400;
+  z-index: 2;
+
+  @media (min-width: $d_min) {
+    font-size: 24px;
+  }
+}
+
+.tariffs__hit {
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  left: 0;
+  top: 0;
+  background: #283645 url("../img/bg-hit.svg") no-repeat;
+  background-size: 74px 74px;
+  color: #ffffff;
+  font-size: 14px;
+
+  &:before {
+    position: absolute;
+    content: "хит";
+    left: 15px;
+    top: 15px;
+    transform: rotate(-45deg);
+
+    @media (min-width: $t_min) {
+      left: 10px;
+      top: 10px;
+    }
+
+    @media (min-width: $d_min) {
+      left: 15px;
+      top: 15px;
+    }
+  }
+
+  @media (min-width: $t_min) {
+    width: 61px;
+    height: 61px;
+    background-size: 61px 61px;
+  }
+
+  @media (min-width: $d_min) {
+    width: 74px;
+    height: 74px;
+    background-size: 74px 74px;
   }
 }
 
 .tariffs__cell {
-  height: 63px;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  align-items: center;
   background-color: #ffffff;
-  margin-top: -9px;
+  justify-content: space-between;
+  padding: 0 20px;
+
+  @media (min-width: $t_min) {
+    padding: 0 15px;
+    justify-content: space-between;
+  }
 }
 
 .tariffs__first_col {
+  font-size: 14px;
+
+  @media (max-width: $m_max) {
+    display: none;
+  }
+
+  @media (min-width: $d_min) {
+    font-size: 18px;
+  }
+}
+
+.tariffs__next_col {
   text-transform: uppercase;
-  justify-content: flex-start;
-  padding-left: 20px;
+
+  @media (min-width: $t_min) {
+    justify-content: center;
+
+    & p {
+      display: none;
+    }
+  }
 }
 
 .tariffs__yes {
-  background: #ffffff url("../img/icon-yes.svg") no-repeat 50% 50%;
-  background-size: 31px 21px;
+  width: 31px;
+  height: 21px;
 }
 
 .tariffs__no {
-  background: #ffffff url("../img/icon-no.svg") no-repeat 50% 50%;
-  background-size: 31px 21px;
+  width: 27px;
+  height: 27px;
 }
 
 .tariffs__empty {
@@ -107,7 +200,7 @@
   justify-content: space-between;
   align-items: center;
 
-  @media (min-width: 661px) {
+  @media (min-width: $t_min) {
     display: none;
   }
 }

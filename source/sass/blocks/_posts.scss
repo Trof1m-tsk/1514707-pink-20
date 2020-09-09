@@ -12,13 +12,13 @@
   line-height: 30px;
   margin: 0 20px 55px;
 
-  @media (min-width: 661px) {
+  @media (min-width: $t_min) {
     font-size: 18px;
     margin: 0 auto 80px;
     width: 480px;
   }
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     width: 600px;
   }
 }
@@ -30,14 +30,14 @@
   align-items: center;
   margin: 0 20px;
 
-  @media (min-width: 661px) {
+  @media (min-width: $t_min) {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: stretch;
   }
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     width: 940px;
     margin: 0 auto;
     justify-content: space-between;

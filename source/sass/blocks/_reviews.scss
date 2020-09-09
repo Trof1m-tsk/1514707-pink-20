@@ -4,7 +4,7 @@
   box-sizing: border-box;
   padding: 50px 0;
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     padding: 50px auto;
     flex-direction: row;
   }
@@ -18,9 +18,9 @@
   width: 100%;
   margin: 0 auto;
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     flex-direction: row;
-    width: 940px;
+    width: 920px;
   }
 }
 
@@ -31,17 +31,17 @@
 }
 
 .reviews__arrow_left {
-  background: #efefef url("../img/icon-review-arrow-left.svg") no-repeat 50% 50%;
+  background: #ffffff url("../img/icon-review-arrow-left.svg") no-repeat 50% 50%;
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     display: block;
   }
 }
 
 .reviews__arrow_right {
-  background: #efefef url("../img/icon-review-arrow-right.svg") no-repeat 50% 50%;
+  background: #ffffff url("../img/icon-review-arrow-right.svg") no-repeat 50% 50%;
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     display: block;
   }
 }
@@ -54,7 +54,7 @@
   overflow: hidden;
   padding: 0 auto;
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     width: 730px;
     margin-right: 0 100px;
   }
@@ -63,12 +63,12 @@
 .reviews__quotes {
   display: none;
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     display: block;
     align-self: center;
     width: 80px;
     height: 65px;
-    background: #efefef url("../img/icon-quotes.svg") no-repeat 50% 50%;
+    background: #ffffff url("../img/icon-quotes.svg") no-repeat 50% 50%;
   }
 }
 
@@ -77,7 +77,7 @@
   width: 300%;
   margin-bottom: 40px;
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     width: 3*730px;
   }
 }
@@ -90,8 +90,8 @@
   align-items: center;
   padding: 0 20px;
 
-  @media (min-width: 980px) {
-    width: 940px;
+  @media (min-width: $d_min) {
+    width: 920px;
   }
 }
 
@@ -99,12 +99,12 @@
   font-size: 18px;
   font-weight: 700;
 
-  @media (min-width: 661px) {
+  @media (min-width: $t_min) {
     font-size: 20px;
     order: 1;
   }
 
-  @media (min-width: 661px) {
+  @media (min-width: $d_min) {
     font-size: 24px;
   }
 }
@@ -115,7 +115,7 @@
   margin-top: 10px;
   padding: 0;
 
-  @media (min-width: 661px) {
+  @media (min-width: $t_min) {
     display: inline;
     order: 2;
   }
@@ -127,7 +127,7 @@
   text-align: center;
   margin-top: 25px;
 
-  @media (min-width: 661px) {
+  @media (min-width: $t_min) {
     font-size: 18px;
     margin-bottom: 50px;
   }
@@ -141,7 +141,7 @@
   justify-content: space-between;
   align-items: center;
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     display: none;
   }
 }

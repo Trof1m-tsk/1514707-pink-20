@@ -4,11 +4,11 @@
   background-color: #ffffff;
   padding-top: 55px;
 
-  @media (min-width: 661px) {
+  @media (min-width: $t_min) {
     padding-top: 100px;
   }
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     width: 980px;
     margin: 0 auto;
     align-self: flex-start;
@@ -23,13 +23,13 @@
   line-height: 30px;
   margin: 0 20px 55px;
 
-  @media (min-width: 661px) {
+  @media (min-width: $t_min) {
     font-size: 18px;
     margin: 0 80px 80px;
   }
 
-  @media (min-width: 980px) {
-    width: 940px;
+  @media (min-width: $d_min) {
+    width: 920px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -39,7 +39,7 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -55,7 +55,7 @@
   align-items: center;
   padding: 0 22px;
 
-  @media (min-width: 661px) {
+  @media (min-width: $t_min) {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;

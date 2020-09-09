@@ -10,7 +10,13 @@
     <header class="header">
       <nav class="header__nav">
         <div class="header__wrapper">
-          <a class="header__logo" href="index.html"></a>
+          <a class="header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 980px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg" width="auto" height="auto" alt="Логотип">
+            </picture>
+          </a>
           <button class="header__toggle header__toggle--closed_menu" id="menu_button">
             <img src="img/icon-menu-burger.svg" class="header__burger">
             <img src="img/icon-menu-cross.svg" class="header__cross hidden">
@@ -40,11 +46,14 @@
             <div class="intro__download download">
               <a class="intro__download_button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
               <div class="intro__download_icons">
-                <a class="intro__download_icon intro__download_ios" href="https://www.apple.com/ru/ios/app-store/">
+                <a class="intro__download_icon" href="https://www.apple.com/ru/ios/app-store/">
+                  <img src="img/logo-apple.svg" alt="apple">
                 </a>
-                <a class="intro__download_icon intro__download_android" href="https://play.google.com/store?hl=ru">
+                <a class="intro__download_icon" href="https://play.google.com/store?hl=ru">
+                  <img src="img/logo-android.svg" alt="android">
                 </a>
-                <a class="intro__download_icon intro__download_windows" href="https://www.microsoft.com/en-us/store/apps/windows">
+                <a class="intro__download_icon" href="https://www.microsoft.com/en-us/store/apps/windows">
+                  <img src="img/logo-microsoft.svg" alt="microsoft">
                 </a>
               </div>
               <p class="intro__available_for">Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8</p>
@@ -58,6 +67,7 @@
         <p class="offer__text">Нам есть, что вам<br>предложить!</p>
       </div>
       <section class="main__advantages advantages">
+        <img class="advantages__background" src="img/bg-triangle-white.svg">
         <div class="advantages__wrapper">
           <div class="advantages__item">
             <img class="advantages__item_img" src="img/iphone-screen-1-desktop@1x.png" alt="Исходное фото">
@@ -122,24 +132,68 @@
         </div>
       </section>
       <section class="main__tariffs tariffs">
+        <img class="tariffs__background" src="img/bg-triangle-white.svg">
         <div class="tariffs__container">
           <div class="main__tariffs tariffs__table">
-            <div class="tariffs__element tariffs__heading tariffs__empty"></div>
-            <div class="tariffs__element tariffs__heading"><span>база</span>1,99 USD</div>
-            <div class="tariffs__element tariffs__heading tariffs__hit"><span>стандарт</span>3,99 USD</div>
-            <div class="tariffs__element tariffs__heading"><span>анлим</span>9,99 USD</div>
-            <div class="tariffs__element tariffs__cell tariffs__first_col">Розовый фильтр</div>
-            <div class="tariffs__element tariffs__cell tariffs__yes"></div>
-            <div class="tariffs__element tariffs__cell tariffs__yes"></div>
-            <div class="tariffs__element tariffs__cell tariffs__yes"></div>
-            <div class="tariffs__element tariffs__cell tariffs__first_col">Смайлики</div>
-            <div class="tariffs__element tariffs__cell tariffs__no"></div>
-            <div class="tariffs__element tariffs__cell tariffs__yes"></div>
-            <div class="tariffs__element tariffs__cell tariffs__yes"></div>
-            <div class="tariffs__element tariffs__cell tariffs__first_col">Комментарии</div>
-            <div class="tariffs__element tariffs__cell tariffs__no"></div>
-            <div class="tariffs__element tariffs__cell tariffs__no"></div>
-            <div class="tariffs__element tariffs__cell tariffs__yes"></div>
+            <div class="tariffs__heading tariffs__empty tariffs__first_col"></div>
+            <div class="tariffs__heading">
+              <p class="tariffs__title">база</p>
+              <p class="tariffs__price">1,99 USD</p>
+            </div>
+            <div class="tariffs__heading">
+              <p class="tariffs__hit"></p>
+              <p class="tariffs__title">стандарт</p>
+              <p class="tariffs__price">3,99 USD</p>
+            </div>
+            <div class="tariffs__heading"><p class="tariffs__title">
+              <p class="tariffs__title">анлим</p>
+              <p class="tariffs__price">9,99 USD</p>
+            </div>
+            <div class="tariffs__cell tariffs__first_col">
+              <p>Розовый фильтр</p>
+            </div>
+            <div class="tariffs__cell tariffs__next_col">
+              <p>Розовый фильтр</p>
+              <img class="tariffs__yes" src="img/icon-yes.svg">
+            </div>
+            <div class="tariffs__cell tariffs__next_col">
+              <p>Розовый фильтр</p>
+              <img class="tariffs__yes" src="img/icon-yes.svg">
+            </div>
+            <div class="tariffs__cell tariffs__next_col">
+              <p>Розовый фильтр</p>
+              <img class="tariffs__yes" src="img/icon-yes.svg">
+            </div>
+            <div class="tariffs__cell tariffs__first_col">
+              <p>Смайлики</p>
+            </div>
+            <div class="tariffs__cell tariffs__next_col">
+              <p>Смайлики</p>
+              <img class="tariffs__no" src="img/icon-no.svg">
+            </div>
+            <div class="tariffs__cell tariffs__next_col">
+              <p>Смайлики</p>
+              <img class="tariffs__yes" src="img/icon-yes.svg">
+            </div>
+            <div class="tariffs__cell tariffs__next_col">
+              <p>Смайлики</p>
+              <img class="tariffs__yes" src="img/icon-yes.svg">
+            </div>
+            <div class="tariffs__cell tariffs__first_col">
+              <p>Комментарии</p>
+            </div>
+            <div class="tariffs__cell tariffs__next_col">
+              <p>Комментарии</p>
+              <img class="tariffs__no" src="img/icon-no.svg">
+            </div>
+            <div class="tariffs__cell tariffs__next_col">
+              <p>Комментарии</p>
+              <img class="tariffs__no" src="img/icon-no.svg">
+            </div>
+            <div class="tariffs__cell tariffs__next_col">
+              <p>Комментарии</p>
+              <img class="tariffs__yes" src="img/icon-yes.svg">
+            </div>
           </div>
         </div>
         <div class="slider__marks tariffs__slider_marks">
@@ -164,23 +218,37 @@
             <p class="contacts__channel">ул. Большая Конюшенная, 19/8</p>
           </div>
         </div>
-        <div class="contacts__map"></div>
+        <div class="contacts__map_container">
+          <img class="contacts__background" src="img/bg-triangle-white-footer.svg">
+          <script class="contacts__map" type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0f679d4deae038cace0b5bc3951d8a63e2cbde1eb2817e0a9053a3b60916f8d0&amp;width=1200&amp;height=502&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <div class="footer__logo"></div>
+        <a class="footer__logo" href="index.html">
+          <img src="img/logo-pink-blue-mobile.svg" alt="Логотип">
+        </a>
         <div class="footer__socials">
-          <a class="footer__twitter footer__social_icon" href="https://twitter.com/"></a>
-          <a class="footer__facebook footer__social_icon" href="https://www.facebook.com/"></a>
-          <a class="footer__youtube footer__social_icon" href="https://www.youtube.com/"></a>
+          <a class="footer__social_icon" href="https://twitter.com/">
+            <img class="footer__twitter" src="img/icon-twitter.svg" alt="twitter">
+          </a>
+          <a class="footer__social_icon" href="https://www.facebook.com/">
+            <img class="footer__facebook" src="img/icon-facebook.svg" alt="facebook">
+          </a>
+          <a class="footer__social_icon" href="https://www.youtube.com/">
+            <img class="footer__youtubeS" src="img/icon-youtube.svg" alt="youtube">
+          </a>
         </div>
         <div class="footer__developed_by">
           <p class="footer__developed_by_text">Разработано</p>
-          <a class="footer__developed_by_logo" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+          <a class="footer__developed_by_logo" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/htmlacademy.svg" alt="htmlacademy">
+          </a>
         </div>
       </div>
     </footer>
     <script type="text/javascript" src="js/app.js"></script>
+
   </body>
 </html>
