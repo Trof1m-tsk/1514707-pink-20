@@ -4,12 +4,12 @@
   justify-content: space-between;
   margin: 0 20px 44px;
 
-  @media (min-width: 661px) {
+  @media (min-width: $t_min) {
     order: -10;
     height: 300px;
   }
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     width: 435px;
     margin-top: 20px;
     margin-bottom: 0;
@@ -19,7 +19,7 @@
 .form_name__container {
   display: flex;
 
-  @media (max-width: 660px) {
+  @media (max-width: $m_max) {
     flex-direction: column;
   }
 }
@@ -32,7 +32,7 @@
   padding: auto 20px;
   margin: 21px 20px;
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     margin-left: 0;
   }
 }

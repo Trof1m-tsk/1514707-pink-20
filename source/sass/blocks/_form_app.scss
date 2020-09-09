@@ -8,7 +8,7 @@
   box-sizing: border-box;
   justify-content: space-between;
 
-  @media (min-width: 661px) {
+  @media (min-width: $t_min) {
     order: -9;
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
@@ -18,7 +18,7 @@
     padding: 54px 60px;
   }
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     width: 435px;
   }
 }
@@ -31,7 +31,7 @@
   text-align: center;
   padding: 0 20px;
 
-  @media (min-width: 661px) {
+  @media (min-width: $t_min) {
     position: absolute;
     align-self: center;
     top: -10px;

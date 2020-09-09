@@ -10,7 +10,13 @@
     <header class="header">
       <nav class="header__nav">
         <div class="header__wrapper">
-          <a class="header__logo" href="index.html"></a>
+          <a class="header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 980px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg" width="auto" height="auto" alt="Логотип">
+            </picture>
+          </a>
           <button class="header__toggle header__toggle--closed_menu" id="menu_button">
             <img src="img/icon-menu-burger.svg" class="header__burger">
             <img src="img/icon-menu-cross.svg" class="header__cross hidden">
@@ -132,15 +138,25 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <div class="footer__logo"></div>
+        <a class="footer__logo" href="index.html">
+          <img src="img/logo-pink-blue-mobile.svg" alt="Логотип">
+        </a>
         <div class="footer__socials">
-          <a class="footer__twitter footer__social_icon" href="https://twitter.com/"></a>
-          <a class="footer__facebook footer__social_icon" href="https://www.facebook.com/"></a>
-          <a class="footer__youtube footer__social_icon" href="https://www.youtube.com/"></a>
+          <a class="footer__social_icon" href="https://twitter.com/">
+            <img class="footer__twitter" src="img/icon-twitter.svg" alt="twitter">
+          </a>
+          <a class="footer__social_icon" href="https://www.facebook.com/">
+            <img class="footer__facebook" src="img/icon-facebook.svg" alt="facebook">
+          </a>
+          <a class="footer__social_icon" href="https://www.youtube.com/">
+            <img class="footer__youtubeS" src="img/icon-youtube.svg" alt="youtube">
+          </a>
         </div>
         <div class="footer__developed_by">
           <p class="footer__developed_by_text">Разработано</p>
-          <a class="footer__developed_by_logo" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+          <a class="footer__developed_by_logo" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/htmlacademy.svg" alt="htmlacademy">
+          </a>
         </div>
       </div>
     </footer>

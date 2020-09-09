@@ -5,7 +5,7 @@
   margin-top: 23px;
   text-transform: uppercase;
 
-  @media (min-width: 661px) {
+  @media (min-width: $t_min) {
     justify-content: space-between;
   }
 }
@@ -17,7 +17,7 @@
   background-size: 100%;
   margin-right: 18px;
 
-  @media (min-width: 661px) {
+  @media (min-width: $t_min) {
     order: 1;
   }
 }

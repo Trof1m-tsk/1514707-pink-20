@@ -21,13 +21,15 @@
   padding: 20px 20px 41px;
   background-color: #f2f2f2;
 
-  @media (min-width: 661px) {
+  @media (min-width: $t_min) {
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-around;
   }
 
-  @media (min-width: 980px) {
-    width: 940px;
+  @media (min-width: $d_min) {
+    justify-content: space-between;
+    width: 920px;
     margin: 0 auto 20px;
     padding: 60px 80px;
     box-sizing: border-box;
@@ -41,7 +43,7 @@
   height: 50px;
   margin: 40px auto 0;
 
-  @media (min-width: 661px) {
+  @media (min-width: $t_min) {
     display: none;
   }
 }
@@ -51,11 +53,11 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @media (min-width: 661px) {
+  @media (min-width: $t_min) {
     height: 374px;
   }
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     width: 410px;
   }
 }
@@ -65,7 +67,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     flex-direction: row;
   }
 }
@@ -84,7 +86,7 @@
   color: #d22856;
   text-align: center;
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     width: 185px;
     margin: 0;
   }
@@ -100,11 +102,11 @@
   width: 240px;
   margin: 0 auto;
 
-  @media (min-width: 661px) {
+  @media (min-width: $t_min) {
     margin: 0;
   }
 
-  @media (min-width: 980px) {
+  @media (min-width: $d_min) {
     width: 290px;
   }
 }
@@ -121,37 +123,28 @@
 
 .upload__fill,
 .upload__contrast {
-  @media (max-width: 660px) {
+  @media (max-width: $m_max) {
+    display: none;
+  }
+}
+
+.upload__icons {
+  height: 40px;
+  width: 40px;
+
+  @media (max-width: $m_max) {
     display: none;
   }
 }
 
 .upload__crop_icon {
-  height: 30px;
-  width: 30px;
   background: url("../img/icon-editor-crop.svg") no-repeat 50% 50%;
-
-  @media (max-width: 660px) {
-    display: none;
-  }
 }
 
 .upload__fill_icon {
-  height: 30px;
-  width: 30px;
   background: url("../img/icon-editor-fill.svg") no-repeat 50% 50%;
-
-  @media (max-width: 660px) {
-    display: none;
-  }
 }
 
 .upload__contrast_icon {
-  height: 30px;
-  width: 30px;
   background: url("../img/icon-editor-contrast.svg") no-repeat 50% 50%;
-
-  @media (max-width: 660px) {
-    display: none;
-  }
 }

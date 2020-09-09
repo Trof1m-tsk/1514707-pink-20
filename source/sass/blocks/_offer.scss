@@ -6,14 +6,21 @@
   width: auto;
   height: auto;
   background-color: #ffffff;
-  padding: 44px 0;
+  padding: 44px 0 0;
   box-sizing: border-box;
 
-  @media (min-width: 661px) {
-    padding: 55px 0;
+
+  @media (max-width: $m_max) {
+    :first-child {
+      margin-bottom: 30px;
+    }
   }
 
-  @media (min-width: 980px) {
+  @media (min-width: $t_min) {
+    padding: 55px 0 30px;
+  }
+
+  @media (min-width: $d_min) {
     padding: 70px 0;
   }
 }
@@ -26,7 +33,7 @@
   color: #283645;
   text-align: center;
 
-  @media (min-width: 661px) {
+  @media (min-width: $t_min) {
     font-size: 40px;
     width: auto;
   }
@@ -35,7 +42,7 @@
 .offer__space {
   display: inline;
 
-  @media (max-width: 661px) {
+  @media (max-width: $m_max) {
     display: none;
   }
 }
