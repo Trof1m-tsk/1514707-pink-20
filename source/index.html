@@ -9,7 +9,7 @@
   <body class="main_page">
     <header class="header">
       <nav class="header__nav">
-        <div class="header__wrapper">
+        <div class="header__wrapper header__wrapper--open_menu">
           <a class="header__logo" href="index.html">
             <picture>
               <source media="(min-width: 980px)" srcset="img/logo-pink-white-desktop.svg">
@@ -22,7 +22,7 @@
             <img src="img/icon-menu-cross.svg" class="header__cross hidden">
           </button>
         </div>
-        <ul class="header__menu header__menu--closed">
+        <ul class="header__menu">
           <li class="header__item">
             <a class="header__link" href="index.html">Главная</a>
           </li>
@@ -102,7 +102,9 @@
       </div>
       <section class="main__reviews reviews slider">
         <div class="reviews__container">
-          <div class="reviews__arrow reviews__arrow_left"></div>
+          <div class="reviews__arrow">
+            <img class="reviews__arrow_left" src="img/icon-review-arrow-left.svg">
+          </div>
           <div class="reviews__wrapper">
             <div class="reviews__quotes"></div>
             <ul class="reviews__list slider__list">
@@ -128,7 +130,9 @@
             <span class="reviews__slider_mark"></span>
             <span class="reviews__slider_mark"></span>
           </div>
-          <div class="reviews__arrow reviews__arrow_right"></div>
+          <div class="reviews__arrow">
+            <img class="reviews__arrow_right" src="img/icon-review-arrow-right.svg">
+          </div>
         </div>
       </section>
       <section class="main__tariffs tariffs">
@@ -211,7 +215,7 @@
           </div>
           <div class="contacts__email">
             <h5 class="contacts__action">Пишите:</h5>
-            <p class="contacts__channel">mail@htmlacademy.ru</p>
+            <p class="contacts__channel"><a href="">mail@htmlacademy.ru</a></p>
           </div>
           <div class="contacts__address">
             <h5 class="contacts__action">Приезжайте в гости:</h5>
@@ -237,7 +241,7 @@
             <img class="footer__facebook" src="img/icon-facebook.svg" alt="facebook">
           </a>
           <a class="footer__social_icon" href="https://www.youtube.com/">
-            <img class="footer__youtubeS" src="img/icon-youtube.svg" alt="youtube">
+            <img class="footer__youtube" src="img/icon-youtube.svg" alt="youtube">
           </a>
         </div>
         <div class="footer__developed_by">
@@ -249,6 +253,5 @@
       </div>
     </footer>
     <script type="text/javascript" src="js/app.js"></script>
-
   </body>
 </html>

@@ -9,7 +9,7 @@
   <body class="photo_page">
     <header class="header">
       <nav class="header__nav">
-        <div class="header__wrapper">
+        <div class="header__wrapper header__wrapper--open_menu">
           <a class="header__logo" href="index.html">
             <picture>
               <source media="(min-width: 980px)" srcset="img/logo-pink-white-desktop.svg">
@@ -22,7 +22,7 @@
             <img src="img/icon-menu-cross.svg" class="header__cross hidden">
           </button>
         </div>
-        <ul class="header__menu header__menu--closed">
+        <ul class="header__menu">
           <li class="header__item">
             <a class="header__link" href="index.html">Главная</a>
           </li>
@@ -44,28 +44,30 @@
       </div>
       <section class="posts">
         <h2 class="posts__heading">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
-        <picture class="panorama">
-          <source srcset="img/panorama-desktop@1x.jpg" media="(min-width: 960px)">
-          <source srcset="img/panorama-tablet@1x.jpg" media="(min-width: 660px)">
-          <img class="panorama__image" src="img/panorama-mobile@1x.jpg" alt="Панорама">
-        </picture>
-        <div class="panorama__content">
-          <div class="post__info">
-            <p class="post__author">Анна</p>
-            <p class="post__time">(5 минут назад)</p>
-          </div>
-          <p class="post_text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <div class="post__likes">
-            <div class="post__likes_button"></div>
-            <p class="post__likes_counter">Нравится: <span>215</span></p>
+        <div class="panorama">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="panorama__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама">
+          </picture>
+          <div class="panorama__content">
+            <div class="post__info">
+              <p class="post__author">Анна</p>
+              <p class="post__time">(5 минут назад)</p>
+            </div>
+            <p class="post_text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <div class="post__likes">
+              <div class="post__likes_button"></div>
+              <p class="post__likes_counter">Нравится: <span>215</span></p>
+            </div>
           </div>
         </div>
         <div class="posts__wrapper">
           <div class="post">
             <picture class="post__photo">
-              <source srcset="img/photo-car-desktop@1x.jpg" media="(min-width: 980px)">
-              <source srcset="img/photo-car-tablet@1x.jpg" media="(min-width: 661px)">
-              <img src="img/photo-car-mobile@1x.jpg" alt="Белая машина">
+              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Белая машина">
             </picture>
             <div class="post__content">
               <div class="post__info">
@@ -81,9 +83,9 @@
           </div>
           <div class="post">
             <picture class="post__photo">
-              <source srcset="img/photo-drumset-desktop@1x.jpg" media="(min-width: 980px)">
-              <source srcset="img/photo-drumset-tablet@1x.jpg" media="(min-width: 661px)">
-              <img src="img/photo-drumset-mobile@1x.jpg" alt="Барабаны">
+              <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабаны">
             </picture>
             <div class="post__content">
               <div class="post__info">
@@ -99,9 +101,9 @@
           </div>
           <div class="post">
             <picture class="post__photo">
-              <source srcset="img/photo-window-desktop@1x.jpg" media="(min-width: 980px)">
-              <source srcset="img/photo-window-tablet@1x.jpg" media="(min-width: 661px)">
-              <img src="img/photo-window-mobile@1x.jpg" alt="Небо">
+              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+              <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Небо">
             </picture>
             <div class="post__content">
               <div class="post__info">
@@ -117,9 +119,9 @@
           </div>
           <div class="post">
             <picture class="post__photo">
-              <source srcset="img/photo-fair-desktop@1x.jpg" media="(min-width: 980px)">
-              <source srcset="img/photo-fair-tablet@1x.jpg" media="(min-width: 661px)">
-              <img src="img/photo-fair-mobile@1x.jpg" alt="Кубань">
+              <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <img src="img/photo-fair-mobile@1x.jpg" src="img/photo-fair-mobile@2x.jpg 2x" alt="Кубань">
             </picture>
             <div class="post__content">
               <div class="post__info">
@@ -135,9 +137,9 @@
           </div>
           <div class="post">
             <picture class="post__photo">
-              <source srcset="img/photo-pov-desktop@1x.jpg" media="(min-width: 980px)">
-              <source srcset="img/photo-pov-tablet@1x.jpg" media="(min-width: 661px)">
-              <img src="img/photo-pov-mobile@1x.jpg" alt="В горах">
+              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="В горах">
             </picture>
             <div class="post__content">
               <div class="post__info">
@@ -153,9 +155,9 @@
           </div>
           <div class="post">
             <picture class="post__photo">
-              <source srcset="img/photo-wing-desktop@1x.jpg" media="(min-width: 980px)">
-              <source srcset="img/photo-wing-tablet@1x.jpg" media="(min-width: 661px)">
-              <img src="img/photo-wing-mobile@1x.jpg" alt="Крыло самолета">
+              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+              <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Крыло самолета">
             </picture>
             <div class="post__content">
               <div class="post__info">
@@ -172,34 +174,37 @@
         </div>
       </section>
       <section class="upload">
-        <h2 class="upload__header">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h2>
-        <div class="upload__wrapper">
-          <img class="upload__image" src="img/photo-road-mobile@1x.jpg" alt="Фото">
-          <div class="upload__mobile_icons">
-            <img src="img/icon-editor-crop.svg">
-            <img src="img/icon-editor-fill.svg">
-            <img src="img/icon-editor-contrast.svg">
-          </div>
-          <form class="upload__adjust">
-            <div class="upload__adjusters">
-              <div class="upload__crop">
-                <div class="upload__crop_icon upload__icons"></div>
-                <input class="upload__range" type="range" min="0" max="100" step="1" value="50">
+        <h2 class="upload__header">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</h2>
+        <div class="upload__outer">
+          <picture class="upload__image">
+            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+            <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фото">
+          </picture>
+          <div class="upload__inner">
+            <form class="upload__adjust">
+              <div class="upload__icons">
+                <img class="upload__crop_icon" src="img/icon-editor-crop.svg" alt="Обрезка">
+                <img class="upload__fill_icon" src="img/icon-editor-fill.svg" alt="Заливка">
+                <img class="upload__contrast_icon" src="img/icon-editor-contrast.svg" alt="Контраст">
               </div>
-              <div class="upload__fill">
-                <div class="upload__fill_icon upload__icons"></div>
-                <input class="upload__range" type="range" min="0" max="100" step="1" value="50">
+              <div class="upload__ranges">
+                <div class="upload__range_crop">
+                  <input class="upload__range" type="range" min="0" max="100" step="1" value="50">
+                </div>
+                <div class="upload__range_fill">
+                  <input class="upload__range" type="range" min="0" max="100" step="1" value="50">
+                </div>
+                <div class="upload__range_contrast">
+                  <input class="upload__range" type="range" min="0" max="100" step="1" value="50">
+                </div>
               </div>
-              <div class="upload__contrast">
-                <div class="upload__contrast_icon upload__icons"></div>
-                <input class="upload__range" type="range" min="0" max="100" step="1" value="50">
-              </div>
-            </div>
+            </form>
             <div class="upload__buttons">
-              <input class="upload__button" type="submit" value="Запостить">
-              <input class="upload__button" type="submit" value="Отмена" disabled>
+              <input class="upload__button upload__button_upload" type="submit" value="Запостить">
+              <input class="upload__button upload__button_cancel" type="submit" value="Отмена">
             </div>
-          </form>
+          </div>
         </div>
       </section>
     </main>
@@ -216,7 +221,7 @@
             <img class="footer__facebook" src="img/icon-facebook.svg" alt="facebook">
           </a>
           <a class="footer__social_icon" href="https://www.youtube.com/">
-            <img class="footer__youtubeS" src="img/icon-youtube.svg" alt="youtube">
+            <img class="footer__youtube" src="img/icon-youtube.svg" alt="youtube">
           </a>
         </div>
         <div class="footer__developed_by">

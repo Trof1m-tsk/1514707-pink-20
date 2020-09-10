@@ -28,18 +28,6 @@
   display: none;
   width: 25px;
   height: 41px;
-}
-
-.reviews__arrow_left {
-  background: #ffffff url("../img/icon-review-arrow-left.svg") no-repeat 50% 50%;
-
-  @media (min-width: $d_min) {
-    display: block;
-  }
-}
-
-.reviews__arrow_right {
-  background: #ffffff url("../img/icon-review-arrow-right.svg") no-repeat 50% 50%;
 
   @media (min-width: $d_min) {
     display: block;
