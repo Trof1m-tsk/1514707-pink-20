@@ -150,12 +150,9 @@
     width: 290px;
   }
 
-  -webkit-appearance: none;
-
   &::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width:12px;
-    height:12px;
+    width: 12px;
+    height: 12px;
     background: #ffffff;
     border: 2px solid #d22856;
     border-radius: 50%;
@@ -201,7 +198,12 @@
   }
 }
 
-.upload__range_fill,
+.upload__range_fill {
+  @media (max-width: $m_max) {
+    display: none;
+  }
+}
+
 .upload__range_contrast {
   @media (max-width: $m_max) {
     display: none;
@@ -217,7 +219,6 @@
   @media (min-width: $d_min) {
     width: 410px;
     flex-direction: row;
-
   }
 }
 

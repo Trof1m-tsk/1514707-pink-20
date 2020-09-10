@@ -63,7 +63,6 @@
 }
 
 .contacts__email {
-
   @media (min-width: $d_min) {
     order: 1;
   }
@@ -72,6 +71,7 @@
 .contacts__email a {
   text-decoration: none;
   color: #d22856;
+  
   &:hover {
     color: #283645;
     text-decoration: underline;

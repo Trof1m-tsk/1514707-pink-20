@@ -53,7 +53,7 @@
   z-index: -1;
 }
 
-.form_app__radio_custom + .form_app__label:before {
+.form_app__radio_custom + .form_app__label::before {
   content: "";
   display: block;
   width: 37px;
@@ -66,12 +66,12 @@
 }
 
 .form_app__radio_custom + .form_app__label:hover::before {
-    border: 2px solid #283645;
-  }
+  border: 2px solid #283645;
+}
 
 .form_app__radio_custom + .form_app__label:active::before {
-    border: 2px solid #d22856;
-  }
+  border: 2px solid #d22856;
+}
 
 .form_app__radio_custom:checked + .form_app__label::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle r='7.5' cx='7.5' cy='7.5' fill='%23d22856'/%3E%3C/svg%3E%0A");
