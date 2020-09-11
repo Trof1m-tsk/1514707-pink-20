@@ -68,6 +68,22 @@
   }
 }
 
+.contacts__email a {
+  text-decoration: none;
+  color: #d22856;
+
+  &:hover {
+    color: #283645;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: #283645;
+    opacity: 0.3;
+    text-decoration: none;
+  }
+}
+
 .contacts__action {
   font-size: 18px;
   font-weight: 700;

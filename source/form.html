@@ -9,7 +9,7 @@
   <body class="form_page">
     <header class="header">
       <nav class="header__nav">
-        <div class="header__wrapper">
+        <div class="header__wrapper header__wrapper--open_menu">
           <a class="header__logo" href="index.html">
             <picture>
               <source media="(min-width: 980px)" srcset="img/logo-pink-white-desktop.svg">
@@ -22,7 +22,7 @@
             <img src="img/icon-menu-cross.svg" class="header__cross hidden">
           </button>
         </div>
-        <ul class="header__menu header__menu--closed">
+        <ul class="header__menu">
           <li class="header__item">
             <a class="header__link" href="index.html">Главная</a>
           </li>
@@ -62,27 +62,27 @@
           <div class="form_achievements">
             <p class="form_achievements__header">Ваши безбашенные достижения в путешествии</p>
             <div class="form_achievements__checkbox_wrapper">
-              <input class="form_achievements__checkbox form_achievements__checked" type="checkbox" name="shark" id="shark-id" checked>
+              <input class="form_achievements__checkbox form_achievements__custom" type="checkbox" name="shark" id="shark-id" checked>
               <label class="form_achievements__label" for="shark-id">Сделал селфи с акулой</label>
             </div>
             <div class="form_achievements__checkbox_wrapper">
-              <input class="form_achievements__checkbox form_achievements__checked" type="checkbox" name="beach" id="beach-id" checked>
+              <input class="form_achievements__checkbox form_achievements__custom" type="checkbox" name="beach" id="beach-id" checked>
               <label class="form_achievements__label" for="beach-id">Обгорел на пляже</label>
             </div>
             <div class="form_achievements__checkbox_wrapper">
-              <input class="form_achievements__checkbox form_achievements__nonchecked" type="checkbox" name="norris" id="norris-id">
+              <input class="form_achievements__checkbox form_achievements__custom" type="checkbox" name="norris" id="norris-id">
               <label class="form_achievements__label" for="norris-id">Видел Чака Норриса</label>
             </div>
             <div class="form_achievements__checkbox_wrapper">
-              <input class="form_achievements__checkbox form_achievements__nonchecked" type="checkbox" name="souvenirs" id="souvenirs-id">
+              <input class="form_achievements__checkbox form_achievements__custom" type="checkbox" name="souvenirs" id="souvenirs-id">
               <label class="form_achievements__label" for="souvenirs-id">Накупил сувениров</label>
             </div>
             <div class="form_achievements__checkbox_wrapper">
-              <input class="form_achievements__checkbox form_achievements__checked" type="checkbox" name="tower" id="tower-id" checked>
+              <input class="form_achievements__checkbox form_achievements__custom" type="checkbox" name="tower" id="tower-id" checked>
               <label class="form_achievements__label" for="tower-id">Удержал башню</label>
             </div>
             <div class="form_achievements__checkbox_wrapper">
-              <input class="form_achievements__checkbox form_achievements__nonchecked" type="checkbox" name="hotel" id="hotel-id">
+              <input class="form_achievements__checkbox form_achievements__custom" type="checkbox" name="hotel" id="hotel-id">
               <label class="form_achievements__label" for="hotel-id">Разгромил отель</label>
             </div>
           </div>
@@ -92,26 +92,23 @@
               <div class="form_contact__container">
                 <label class="form_contact__label" for="phone-id">Номер телефона</label>
                 <input class="form_contact__input" type="text" name="phone" id="phone-id" placeholder="Номер, пожалуйста">
-                <div class="form_contact__phone_icon"></div>
+                <div class="form_contact__icon form_contact__phone_icon"></div>
               </div>
               <div class="form_contact__container">
                 <label class="form_contact__label" for="email-id">Адрес почты</label>
                 <input class="form_contact__input" type="text" name="email" id="email-id" placeholder="Введите почту *">
-                <div class="form_contact__email_icon"></div>
+                <div class="form_contact__icon form_contact__email_icon"></div>
               </div>
             </div>
           </div>
           <div class="form_app">
             <p class="form_app__header">С каким приложением путешествовали?</p>
-            <label class="form_app__label">
-              <input class="form_app__radio" type="radio" name="what-app" value="Pink для iOS" checked>Pink для iOS
-            </label>
-            <label class="form_app__label">
-              <input class="form_app__radio" type="radio" name="what-app" value="Pink на Android">Pink на Android
-            </label>
-            <label class="form_app__label">
-              <input class="form_app__radio" type="radio" name="what-app" value="Windows Phone">Windows Phone
-            </label>
+            <input class="form_app__radio form_app__radio_custom" type="radio" name="app_radio" id="ios_radio" value="Pink для iOS" checked>
+            <label class="form_app__label" for="ios_radio">Pink для iOS</label>
+            <input class="form_app__radio form_app__radio_custom" type="radio" name="app_radio" id="android_radio" value="Pink на Android">
+            <label class="form_app__label" for="android_radio">Pink на Android</label>
+            <input class="form_app__radio form_app__radio_custom" type="radio" name="app_radio" id="windows_radio">
+            <label class="form_app__label" for="windows_radio">Windows Phone</label>
           </div>
           <div class="form_text">
             <p class="form_text__header">Опишите свои эмоции</p>
@@ -149,7 +146,7 @@
             <img class="footer__facebook" src="img/icon-facebook.svg" alt="facebook">
           </a>
           <a class="footer__social_icon" href="https://www.youtube.com/">
-            <img class="footer__youtubeS" src="img/icon-youtube.svg" alt="youtube">
+            <img class="footer__youtube" src="img/icon-youtube.svg" alt="youtube">
           </a>
         </div>
         <div class="footer__developed_by">

@@ -85,14 +85,22 @@
   }
 
   &:hover {
+    border: 2px solid #283645;
+  }
+
+  &:focus {
+    outline: none;
     border: 2px solid #d22856;
   }
 }
 
-.form_contact__phone_icon {
-  background: #e5e5e5 url("../img/icon-phone.svg") no-repeat 50% 50%;
-  width: 59px;
-  height: 59px;
+.form_contact__icon {
+  width: 57px;
+  height: 55px;
+  border-top: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  border-radius: 3px;
   position: absolute;
   align-self: flex-end;
 
@@ -101,14 +109,28 @@
   }
 }
 
+.form_contact__input:hover + .form_contact__icon {
+  border-top: 2px solid #283645;
+  border-right: 2px solid #283645;
+  border-bottom: 2px solid #283645;
+}
+
+.form_contact__input:focus + .form_contact__icon {
+  border-top: 2px solid #d22856;
+  border-right: 2px solid #d22856;
+  border-bottom: 2px solid #d22856;
+}
+
+.form_contact__input:active + .form_contact__icon {
+  border-top: 2px solid #d22856;
+  border-right: 2px solid #d22856;
+  border-bottom: 2px solid #d22856;
+}
+
+.form_contact__phone_icon {
+  background: #e5e5e5 url("../img/icon-phone.svg") no-repeat 50% 50%;
+}
+
 .form_contact__email_icon {
   background: #e5e5e5 url("../img/icon-mail.svg") no-repeat 50% 50%;
-  width: 59px;
-  height: 59px;
-  position: absolute;
-  align-self: flex-end;
-
-  @media (max-width: 660px) {
-    display: none;
-  }
 }
