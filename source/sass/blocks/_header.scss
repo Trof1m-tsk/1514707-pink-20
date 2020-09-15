@@ -121,7 +121,7 @@
 }
 
 .header__link {
-  font-family: "Open sans bolt";
+  font-family: "Open sans bolt", "Arial", sans-serif;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -135,7 +135,7 @@
   padding: 18px auto;
 
   @media (min-width: $d_min) {
-    font-family: "Open sans";
+    font-family: "Open sans", "Arial", sans-serif;
     font-weight: 400;
     height: 56px;
   }
