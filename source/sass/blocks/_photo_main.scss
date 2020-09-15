@@ -13,7 +13,10 @@
   align-items: center;
   width: 100%;
   height: 80vw;
-  background: #1d2631 url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0%;
+  background: #1d2631;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
   background-size: 100% auto;
 
   @media (min-resolution: 1.5dppx) {
@@ -44,9 +47,10 @@
 }
 
 .photo_main__banner_text {
+  font-family: "Open sans light", "Arial", sans-serif;
   display: block;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 300;
   color: #ffffff;
   margin: 40px auto;
   padding-top: 65px;

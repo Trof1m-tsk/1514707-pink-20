@@ -4,10 +4,15 @@
   height: 330px;
   flex-direction: column;
   align-items: center;
-  background: #ffffff;
+  background-color: #ffffff;
 
   @media (max-width: $m_max) {
     display: none;
+  }
+
+  @media (min-width: $d_min) {
+    background-color: #f2f2f2;
+    height: 429px;
   }
 }
 
@@ -24,14 +29,21 @@
 
 .effect__clock {
   box-sizing: border-box;
-  width: auto;
+  width: 238px;
   height: 276px;
   margin: 0 40px 0 20px;
   background: url("../img/icon-timer.svg") no-repeat 50% 50%;
   background-size: 100%;
+
+  @media (min-width: $d_min) {
+    width: 298px;
+    height: 345px;
+    margin-right: 70px;
+  }
 }
 
 .effect__clock_text {
+  font-family: "Open sans bolt", "Arial", sans-serif;
   display: flex;
   width: 202px;
   height: 202px;
@@ -43,6 +55,15 @@
   font-weight: 700;
   color: #d22856;
   border: 16px solid #d22856;
+
+  @media (min-width: $d_min) {
+    margin-top: 69px;
+    width: 252px;
+    height: 252px;
+    padding: 25px 40px 24px;
+    border: 18px solid #d22856;
+    font-size: 120px;
+  }
 }
 
 .effect__text_block {

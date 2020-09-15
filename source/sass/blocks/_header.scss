@@ -81,13 +81,13 @@
   height: 24px;
   background-color: rgba(0, 0, 0, 0);
 
-  &--nojs {
-    display: none;
-  }
-
   @media (min-width: $d_min) {
     display: none;
   }
+}
+
+.header__button {
+  display: block;
 }
 
 .header__menu {
@@ -121,6 +121,8 @@
 }
 
 .header__link {
+  font-family: "Open sans bolt";
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,6 +135,8 @@
   padding: 18px auto;
 
   @media (min-width: $d_min) {
+    font-family: "Open sans";
+    font-weight: 400;
     height: 56px;
   }
 
