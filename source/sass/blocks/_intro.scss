@@ -5,20 +5,11 @@
   width: 100%;
   height: 733px;
   color: #ffffff;
-  background: #1d2631 url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 0;
+  background-color: #1d2631;
+  background-image: url("../img/bg-back-tablet@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
   background-size: auto 462px;
-
-  &--nojs {
-    top: -69px;
-
-    @media (min-width: $t_min) {
-      top: -110px;
-    }
-
-    @media (min-width: $d_min) {
-      top: 0;
-    }
-  }
 
   @media (min-resolution: 1.5dppx) {
     background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -107,12 +98,13 @@
 }
 
 .intro__slogan {
+  font-family: "Open sans light", "Arial", sans-serif;
   display: inline-block;
   position: relative;
   width: 300px;
   box-sizing: border-box;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 120%;
   text-align: center;
   padding: 0 20px;
@@ -184,10 +176,11 @@
 }
 
 .intro__available_for {
+  font-family: "Open sans light", "Arial", sans-serif;
   display: inline-block;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
 
   @media (min-width: $t_min) {

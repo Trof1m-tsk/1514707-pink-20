@@ -85,8 +85,9 @@
 }
 
 .tariffs__price {
+  font-family: "Open sans light", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   z-index: 2;
 
   @media (min-width: $d_min) {

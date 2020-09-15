@@ -8,10 +8,11 @@
 }
 
 .contacts__heading {
+  font-family: "Open sans light", "Arial", sans-serif;
   display: inline-block;
   text-align: center;
   position: relative;
-  font-weight: 400;
+  font-weight: 300;
   color: #283645;
   font-size: 24px;
   line-height: 120%;
@@ -90,6 +91,8 @@
 }
 
 .contacts__channel {
+  font-family: "Open sans light", "Arial", sans-serif;
+  font-weight: 300;
   margin: 0 auto 31px;
   text-align: center;
   font-size: 24px;
