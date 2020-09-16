@@ -136,13 +136,10 @@
 
 .upload__range {
   width: 240px;
-  margin: 0 auto;
-  height: 2px;
+  margin: auto;
   outline: none;
-  background-color: black;
 
   @media (min-width: $t_min) {
-    margin: 0;
     width: 200px;
   }
 
@@ -150,7 +147,21 @@
     width: 290px;
   }
 
+
   &::-webkit-slider-thumb {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.1s;
+
+    &:active {
+      background-color: #d22856;
+    }
+  }
+
+  &::-moz-range-thumb {
     width: 12px;
     height: 12px;
     background: #ffffff;
@@ -160,7 +171,7 @@
     transition: 0.1s;
 
     &:active {
-      background: #d22856;
+      background-color: #d22856;
     }
   }
 }

@@ -33,7 +33,7 @@
   }
 
   @media (min-width: $d_min) {
-    width: 920px;
+    width: 940px;
     padding: 0;
     flex-direction: row;
     justify-content: space-between;
@@ -76,7 +76,12 @@
   margin-bottom: 15px;
 
   @media (min-width: $d_min) {
+    font-family: "Open sans bolt", "Arial", sans-serif;
     font-size: 30px;
+    padding: 0 10px;
+    margin-top: 48px;
+    margin-bottom: 25px;
+    line-height: 30px;
   }
 }
 
@@ -88,6 +93,7 @@
   @media (min-width: $d_min) {
     font-size: 18px;
     line-height: 30px;
+    padding: 0 6px;
   }
 }
 

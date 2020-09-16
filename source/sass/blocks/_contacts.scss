@@ -24,6 +24,8 @@
 
   @media (min-width: $d_min) {
     font-size: 50px;
+    margin: 60px auto 40px;
+    line-height: 135%;
   }
 }
 
@@ -42,7 +44,7 @@
   }
 
   @media (min-width: $d_min) {
-    width: 920px;
+    width: 940px;
     align-self: center;
   }
 }
@@ -88,6 +90,10 @@
 .contacts__action {
   font-size: 18px;
   font-weight: 700;
+
+  @media (min-width: $d_min) {
+    margin-bottom: 20px;
+  }
 }
 
 .contacts__channel {
@@ -98,6 +104,10 @@
   font-size: 24px;
   color: #d22856;
   width: 250px;
+
+  @media (min-width: $d_min) {
+    margin-bottom: 20px;
+  }
 }
 
 .contacts__map_container {
